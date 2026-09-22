@@ -1,0 +1,47 @@
+name: Auto Hub Orchestrator
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'        # اجرا هر ۳ ساعت یک‌بار به صورت کاملاً خودکار
+  workflow_dispatch:             # دکمه اجرای دستی فوری
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hub_orchestrator
+  cancel-in-progress: false
+
+jobs:
+  run-hub:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: pip install -q -r requirements.txt
+
+      - name: Execute Master Runner
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+        run: python multi_bot/runner.py
+
+      - name: Commit Updated Hub Files
+        run: |
+          git config user.name "Hub-Bot"
+          git config user.email "bot@github.com"
+          git add Subscription/ Config/ Country/ transports/ all.txt all_b64.txt 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto Update Hub: $(date -u +'%Y-%m-%d %H:%M')"
+            git push origin main
+          else
+            echo "تغییری برای ذخیره وجود نداشت."
+          fi
