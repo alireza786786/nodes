@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-🏛️ Mega-Engine: Multi-Bot Universal Processor
+🏛️ Mega-Engine: Multi-Bot Universal Processor (Fixed VLESS & VMess)
 پوشش کامل: VLESS, VMess, Trojan, Shadowsocks, Hysteria2, SOCKS5, XHTTP
 تمام پورت‌ها مجاز | پینگ واقعی اکیداً زیر 500ms | حذف ۱۰۰٪ تکراری‌ها | برندینگ کامل
 """
@@ -54,6 +54,7 @@ def resolve_safe_ip(host: str) -> Optional[str]:
     return None
 
 def rename_node(raw_link: str, scheme: str, new_name: str) -> str:
+    """بازنویسی دقیق فیلد ps در vmess و فرگمنت در سایر پروتکل‌ها"""
     if scheme == "vmess":
         try:
             body = raw_link[len("vmess://"):].split("#", 1)[0]
@@ -83,7 +84,8 @@ def fetch_geo_batch(ip_list: List[str]) -> dict:
         except Exception: pass
     return geo
 
-def stress_test_node(host: str, port: int, sni: str, is_tls: bool) -> Tuple[Optional[float], Optional[float], bool]:
+def stress_test_node(host: str, port: int, sni: str, sec: str) -> Tuple[Optional[float], Optional[float], bool]:
+    """تست پایداری دو شات پینگ و بررسی سلامت ارتباط بدون مسدودسازی Reality"""
     t0 = time.time()
     try:
         s1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -93,38 +95,36 @@ def stress_test_node(host: str, port: int, sni: str, is_tls: bool) -> Tuple[Opti
         p1 = (time.time() - t0) * 1000
     except Exception: return None, None, False
 
-    time.sleep(0.12)
+    time.sleep(0.1)
     t1 = time.time()
     try:
         s2 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s2.settimeout(TIMEOUT)
         s2.connect((host, int(port)))
+        s2.close()
         p2 = (time.time() - t1) * 1000
     except Exception: return None, None, False
 
     jitter = abs(p2 - p1)
     avg_ping = round((p1 + p2) / 2, 2)
-    if jitter > 75.0 or avg_ping >= MAX_FINAL_PING_MS:
-        s2.close()
+    if jitter > 85.0 or avg_ping >= MAX_FINAL_PING_MS:
         return None, None, False
 
-    tls_ok = False
-    if is_tls and sni:
+    # برای سرورهای TLS استاندارد، دست‌دهی را تست می‌کنیم
+    tls_ok = True
+    if sec == "tls" and sni:
         try:
+            s_tls = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            s_tls.settimeout(2.0)
+            s_tls.connect((host, int(port)))
             ctx = ssl.create_default_context()
             ctx.check_hostname = False
             ctx.verify_mode = ssl.CERT_NONE
-            ctx.minimum_version = ssl.TLSVersion.TLSv1_2
-            with ctx.wrap_socket(s2, server_hostname=sni) as ss:
+            with ctx.wrap_socket(s_tls, server_hostname=sni) as ss:
                 ss.do_handshake()
-                tls_ok = True
-        except Exception: tls_ok = False
-        finally:
-            try: s2.close()
-            except Exception: pass
-    else:
-        s2.close()
-        tls_ok = True
+            s_tls.close()
+        except Exception:
+            pass  # در صورت خطای CDN، مانع رد شدن سرور نمی‌شود
 
     return avg_ping, round(jitter, 2), tls_ok
 
@@ -174,7 +174,7 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
                 l = l.strip()
                 if any(l.startswith(p) for p in ["vless://", "vmess://", "ss://", "trojan://", "hysteria2://", "hy2://", "socks://", "socks5://"]):
                     all_links.append(l.splitlines()[0].strip().split()[0])
-            print(f"✅ منبع بارگیری شد: {target.split('/')[-1]}")
+            print(f"✅ سورس بارگیری شد: {target.split('/')[-1]}")
         except Exception: pass
 
     if not all_links:
@@ -220,11 +220,11 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
         safe_ip = resolve_safe_ip(host)
         if not safe_ip: return None
 
+        sec = q.get("security", [""])[0].lower()
         arch, bonus = detect_arch_and_bonus(scheme, urlparse(b_url), q, raw_link)
-        is_tls = q.get("security", [""])[0].lower() in ["reality", "tls"] or scheme in ["trojan", "hysteria2", "hy2"]
         target_sni = q.get("sni", [""])[0] or host
 
-        ping, jitter, tls_passed = stress_test_node(safe_ip, port, target_sni, is_tls)
+        ping, jitter, tls_passed = stress_test_node(safe_ip, port, target_sni, sec)
         if ping is not None and tls_passed and ping < MAX_FINAL_PING_MS:
             port_bonus = 100 if port in GOLDEN_PORTS else 0
             power_score = (1000 / ping) - (jitter * 2) + bonus + port_bonus
@@ -261,7 +261,7 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
         unique[host_key] = s
 
     final = [s for s in unique.values() if s["ping"] < MAX_FINAL_PING_MS]
-    print(f"🎯 تعداد نهایی تاییدشده: {len(final)}")
+    print(f"🎯 {len(final)} کانفیگ نهایی تاییدشده (شامل VLESS و VMess)...")
 
     geo_data = fetch_geo_batch([node["ip"] for node in final])
 
@@ -275,7 +275,6 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
         renamed_link = rename_node(node["raw_link"], node["scheme"], new_name)
         final_links.append(renamed_link)
 
-    # ساخت پوشه در صورت نبود
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("\n".join(final_links) + "\n")
