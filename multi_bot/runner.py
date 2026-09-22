@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-🏛️ Master Multi-Bot Orchestrator & Hub Splitter
-اجرای خودکار بسته‌های guard1 تا guard8 بر اساس sources.json
-پر کردن پوشه‌های Subscription, Config, Country, transports و فایل all.txt
+🏛️ Master Multi-Bot Orchestrator & Hub Splitter (Zero-Hardcoded Sources)
+منابع ۱۰۰٪ مخفی و خوانده‌شده از سکرت SOURCES_DATA
+بدون وجود حتی یک لینک در متن کدها
 """
 
 import os
@@ -13,16 +13,31 @@ import re
 import base64
 from datetime import datetime, timezone, timedelta
 
-# اضافه کردن مسیر پوشه‌ها به سیستم
 sys.path.append(os.path.abspath("."))
 sys.path.append(os.path.abspath("multi_bot"))
 sys.path.append(os.path.abspath("Proxy_collector"))
 
 import engine as core_engine
 
-SOURCES_FILE = "sources.json"
 CHANNEL_LINK = "https://t.me/Goodbaye_filtering"
 CHAT_GROUP_LINK = "https://t.me/CONFIG_V2RAY_VIP"
+
+def load_sources_from_vault():
+    """خواندن ۱۰۰٪ مخفی منابع از گاوصندوق سکرت گیت‌هاب"""
+    data_str = os.environ.get("SOURCES_DATA", "").strip()
+    if data_str:
+        try:
+            return json.loads(data_str)
+        except Exception as e:
+            print(f"❌ خطای دیکود منابع: {e}")
+    # پشتیبان لوکال برای ترموکس
+    cfg_p = os.path.expanduser("~/.sources.json")
+    if os.path.exists(cfg_p):
+        try:
+            with open(cfg_p, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception: pass
+    return {}
 
 def get_tehran_time():
     tz = timezone(timedelta(hours=3, minutes=30))
@@ -65,17 +80,14 @@ def build_header(cat_title: str, count: int, date_str: str, time_str: str) -> st
     )
 
 def main():
-    print("🚀 [ORCHESTRATOR] شروع پردازش سراسری بسته‌های guard...")
+    print("🚀 [ORCHESTRATOR] شروع پردازش ایمن با منابع مخفی...")
     date_str, time_str = get_tehran_time()
 
-    if not os.path.exists(SOURCES_FILE):
-        print(f"❌ فایل منابع {SOURCES_FILE} یافت نشد.")
+    sources_data = load_sources_from_vault()
+    if not sources_data:
+        print("❌ خطا: هیچ منبعی در سکرت SOURCES_DATA پیدا نشد.")
         return
 
-    with open(SOURCES_FILE, "r", encoding="utf-8") as f:
-        sources_data = json.load(f)
-
-    # ساخت زیرساخت پوشه‌ها
     os.makedirs("Subscription/plain", exist_ok=True)
     os.makedirs("Subscription/base64", exist_ok=True)
     os.makedirs("Config", exist_ok=True)
@@ -85,19 +97,16 @@ def main():
     all_plain_configs = []
     seen_bases = set()
 
-    # اجرای بسته‌های ۱ تا ۷
     for i in range(1, 8):
         key = f"guard{i}"
         srcs = sources_data.get(key, [])
-        if not srcs:
-            continue
+        if not srcs: continue
         out_plain = f"Subscription/plain/{key}.txt"
         out_b64 = f"Subscription/base64/{key}.txt"
 
         print(f"\n⚡ پردازش بسته {key}...")
         valid_nodes = core_engine.run_engine_core(key, tuple(srcs), out_plain)
 
-        # ساخت فایل Base64 همان بسته
         if valid_nodes:
             b64_str = base64.b64encode("\n".join(valid_nodes).encode("utf-8")).decode("utf-8")
             with open(out_b64, "w", encoding="utf-8") as bf:
@@ -109,51 +118,43 @@ def main():
                     seen_bases.add(base)
                     all_plain_configs.append(line)
 
-    # اجرای بسته ۸ (پروکسی‌های تلگرام)
     try:
         print("\n⚡ پردازش بسته guard8 (پروکسی تلگرام)...")
+        os.environ["PROXY_SOURCES"] = "\n".join(sources_data.get("guard8", []))
         import collector as proxy_module
         import asyncio
         asyncio.run(proxy_module.main())
     except Exception as e:
-        print(f"⚠️ خطا در اجرای بسته ۸: {e}")
+        print(f"⚠️ اجرا بسته ۸: {e}")
 
     total_unique = len(all_plain_configs)
     print(f"\n🎯 مجموع کل کانفیگ‌های یکتای استخراج‌شده: {total_unique}")
     if not all_plain_configs:
         return
 
-    # دسته‌بندی در پوشه Config (پروتکل‌ها)
-    by_proto = {}
-    by_trans = {}
-    by_country = {}
-
+    by_proto, by_trans, by_country = {}, {}, {}
     for node in all_plain_configs:
         p = extract_protocol(node)
         by_proto.setdefault(p, []).append(node)
 
         t = extract_transport(node)
-        if t != "other":
-            by_trans.setdefault(t, []).append(node)
+        if t != "other": by_trans.setdefault(t, []).append(node)
 
         c = extract_country(node)
         by_country.setdefault(c, []).append(node)
 
-    # نگارش فایل‌های Config/
     for proto, nodes in by_proto.items():
         fname = f"Config/{proto}.txt"
         header = build_header(f"Protocol: {proto}", len(nodes), date_str, time_str)
         with open(fname, "w", encoding="utf-8") as f:
             f.write(header + "\n".join(nodes) + "\n")
 
-    # نگارش فایل‌های transports/
     for trans, nodes in by_trans.items():
         fname = f"transports/{trans}.txt"
         header = build_header(f"Transport: {trans}", len(nodes), date_str, time_str)
         with open(fname, "w", encoding="utf-8") as f:
             f.write(header + "\n".join(nodes) + "\n")
 
-    # نگارش فایل‌های Country/
     for country, nodes in by_country.items():
         if country == "Other": continue
         fname = f"Country/{country}.txt"
@@ -161,17 +162,15 @@ def main():
         with open(fname, "w", encoding="utf-8") as f:
             f.write(header + "\n".join(nodes) + "\n")
 
-    # نگارش فایل آرشیو جامع ریشه all.txt
     header_all = build_header("All Confirmed Nodes", total_unique, date_str, time_str)
     with open("all.txt", "w", encoding="utf-8") as f:
         f.write(header_all + "\n".join(all_plain_configs) + "\n")
 
-    # نسخه Base64 جامع
     b64_all = base64.b64encode("\n".join(all_plain_configs).encode("utf-8")).decode("utf-8")
     with open("all_b64.txt", "w", encoding="utf-8") as f:
         f.write(b64_all)
 
-    print("✅ تمام پوشه‌های Config، Country، transports و Subscription با موفقیت پر شدند.")
+    print("✅ تمام پوشه‌ها (Config, Country, transports, Subscription) با موفقیت پر شدند.")
 
 if __name__ == "__main__":
     main()
