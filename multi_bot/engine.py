@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-🏛️ Mega-Engine: Multi-Bot Universal Processor (VLESS & VMess Unleashed)
-پوشش کامل و قطعی: VLESS, VMess, Trojan, Shadowsocks, Hysteria2, SOCKS5, XHTTP
-تمام پورت‌ها مجاز | پینگ واقعی اکیداً زیر 500ms | حذف ۱۰۰٪ تکراری‌ها | برندینگ کامل
+🏛️ Mega-Engine: Multi-Bot Universal Processor (All Protocols Enabled)
+پوشش کامل: VLESS (Reality/Vision/gRPC), VMess (با بازنویسی فیلد ps), Trojan, Shadowsocks, Hysteria2, SOCKS5
 """
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -39,10 +38,11 @@ GOLDEN_PORTS = {443, 8443, 2053, 2083, 2087, 2096, 80, 8080, 8880}
 def get_flag_emoji(c: str) -> str:
     return "".join(chr(127397 + ord(x.upper())) for x in c) if c and len(c) == 2 else "🌐"
 
-def resolve_safe_ip(host: str) -> Optional[str]:
+def resolve_safe_ip(host: str) -> str:
     try:
         ip_obj = ipaddress.ip_address(host)
-        return host if not (ip_obj.is_private or ip_obj.is_loopback) else None
+        if ip_obj.is_private or ip_obj.is_loopback: return ""
+        return host
     except ValueError: pass
     try:
         infos = socket.getaddrinfo(host, None)
@@ -78,7 +78,6 @@ def fetch_geo_batch(ip_list: List[str]) -> dict:
                         geo[it["query"]] = {
                             "country": it.get("country", "Unknown"),
                             "city": it.get("city", "Unknown"),
-                            "cc": it.get("countryCode", "XX"),
                             "flag": get_flag_emoji(it.get("countryCode", ""))
                         }
         except Exception: pass
@@ -145,6 +144,8 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
             r = requests.get(target, headers=headers, timeout=14)
             if r.status_code != 200: continue
             txt = r.text.strip()
+            
+            # در صورتی که فایل Base64 باشد
             if not any(p in txt for p in ["vless://", "vmess://", "ss://", "trojan://", "hysteria2://"]):
                 try:
                     s = "".join(txt.split())
@@ -199,7 +200,7 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
         except Exception: pass
 
     items = list(cands.values())
-    print(f"💎 تعداد کل کاندیدها: {len(items)} | تست پینگ بدون حذف اجباری...")
+    print(f"💎 تعداد کل کاندیدها: {len(items)} | شروع تست پینگ...")
 
     def test_pipeline(it):
         b_url, host, port, uuid, sni, path, scheme, raw_link, q = it
@@ -232,7 +233,6 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
 
     tested.sort(key=lambda x: x["score"], reverse=True)
 
-    # حفظ تفکیک پروتکل‌ها تا هیچ پروتکلی دیگری را حذف نکند
     unique = {}
     seen_keys = set()
     for s in tested:
