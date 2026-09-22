@@ -2,8 +2,8 @@ name: Auto Hub Orchestrator
 
 on:
   schedule:
-    - cron: '0 */3 * * *'        # اجرا هر ۳ ساعت یک‌بار به صورت کاملاً خودکار
-  workflow_dispatch:             # دکمه اجرای دستی فوری
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -32,6 +32,7 @@ jobs:
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
+          SOURCES_DATA: ${{ secrets.SOURCES_DATA }}
         run: python multi_bot/runner.py
 
       - name: Commit Updated Hub Files
