@@ -1,0 +1,27 @@
+name: Auto Unpin (Every 12 Hours)
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'       # اجرا خودکار هر ۱۲ ساعت یک‌بار (روزانه ۲ بار)
+  workflow_dispatch:             # دکمه اجرای دستی
+
+jobs:
+  unpin-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Requests
+        run: pip install -q requests
+
+      - name: Clear All Pinned Messages
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+        run: python engines/unpin.py
