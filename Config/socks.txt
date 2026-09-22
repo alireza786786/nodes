@@ -1,9 +1,13 @@
 # ═══════════════════════════════════════════════════════
 # ✨ Goodbaye Filtering Hub — PROTOCOL: SOCKS
-# 📊 تعداد کانفیگ‌های تست‌شده: 2
-# 📅 تاریخ میلادی: 2026-09-22 | 🕒 ساعت: 18:11:16 (تهران)
+# 📊 تعداد کانفیگ‌های تست‌شده: 6
+# 📅 تاریخ میلادی: 2026-09-22 | 🕒 ساعت: 21:55:40 (تهران)
 # 📢 کانال: https://t.me/Goodbaye_filtering
 # 💬 گروه: https://t.me/CONFIG_V2RAY_VIP
 # ═══════════════════════════════════════════════════════
-socks://Og%3D%3D@83.147.216.208:1080#%F0%9F%91%89%F0%9F%86%94%40Goodbaye_filtering%F0%9F%93%A1%F0%9F%87%AB%F0%9F%87%AE%C2%AE%EF%B8%8FFinland%C2%A9%EF%B8%8FHelsinki%F0%9F%85%BF%EF%B8%8Fping%3A211.3ms%E2%9A%A1%EF%B8%8FCF-CleanIP
-socks://MTExOjExMQ@47.76.229.132:11310#%F0%9F%91%89%F0%9F%86%94%40Goodbaye_filtering%F0%9F%93%A1%F0%9F%87%AD%F0%9F%87%B0%C2%AE%EF%B8%8FHong%20Kong%C2%A9%EF%B8%8FHong%20Kong%F0%9F%85%BF%EF%B8%8Fping%3A151.0ms%E2%9A%A1%EF%B8%8FCF-CleanIP
+socks://Og%3D%3D@161.35.90.93:1083#%F0%9F%91%89%F0%9F%86%94%40Goodbaye_filtering%F0%9F%93%A1%F0%9F%87%B3%F0%9F%87%B1%C2%AE%EF%B8%8FThe%20Netherlands%C2%A9%EF%B8%8FAmsterdam%F0%9F%85%BF%EF%B8%8Fping%3A106.2ms%E2%9A%A1%EF%B8%8FCF-CleanIP
+socks://Og%3D%3D@144.24.111.128:1088#%F0%9F%91%89%F0%9F%86%94%40Goodbaye_filtering%F0%9F%93%A1%F0%9F%87%AE%F0%9F%87%B3%C2%AE%EF%B8%8FIndia%C2%A9%EF%B8%8FMumbai%F0%9F%85%BF%EF%B8%8Fping%3A244.6ms%E2%9A%A1%EF%B8%8FCF-CleanIP
+socks://Og%3D%3D@109.123.251.109:1080#%F0%9F%91%89%F0%9F%86%94%40Goodbaye_filtering%F0%9F%93%A1%F0%9F%8C%90%C2%AE%EF%B8%8FUnknown%C2%A9%EF%B8%8FUnknown%F0%9F%85%BF%EF%B8%8Fping%3A159.0ms%E2%9A%A1%EF%B8%8FCF-CleanIP
+socks://Og%3D%3D@185.63.113.164:1085#%F0%9F%91%89%F0%9F%86%94%40Goodbaye_filtering%F0%9F%93%A1%F0%9F%87%AE%F0%9F%87%B7%C2%AE%EF%B8%8FIran%C2%A9%EF%B8%8FTehran%F0%9F%85%BF%EF%B8%8Fping%3A176.0ms%E2%9A%A1%EF%B8%8FCF-CleanIP
+socks://MTExOjExMQ@47.76.229.132:11310#%F0%9F%91%89%F0%9F%86%94%40Goodbaye_filtering%F0%9F%93%A1%F0%9F%87%AD%F0%9F%87%B0%C2%AE%EF%B8%8FHong%20Kong%C2%A9%EF%B8%8FHong%20Kong%F0%9F%85%BF%EF%B8%8Fping%3A199.7ms%E2%9A%A1%EF%B8%8FCF-CleanIP
+socks://MTIzOjEyMw@8.217.182.75:3060#%F0%9F%91%89%F0%9F%86%94%40Goodbaye_filtering%F0%9F%93%A1%F0%9F%87%AD%F0%9F%87%B0%C2%AE%EF%B8%8FHong%20Kong%C2%A9%EF%B8%8FHong%20Kong%F0%9F%85%BF%EF%B8%8Fping%3A195.3ms%E2%9A%A1%EF%B8%8FCF-CleanIP
