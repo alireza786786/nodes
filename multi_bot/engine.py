@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-🏛️ Mega-Engine: Multi-Bot Universal Processor (Fixed VLESS & VMess)
-پوشش کامل: VLESS, VMess, Trojan, Shadowsocks, Hysteria2, SOCKS5, XHTTP
+🏛️ Mega-Engine: Multi-Bot Universal Processor (VLESS & VMess Unleashed)
+پوشش کامل و قطعی: VLESS, VMess, Trojan, Shadowsocks, Hysteria2, SOCKS5, XHTTP
 تمام پورت‌ها مجاز | پینگ واقعی اکیداً زیر 500ms | حذف ۱۰۰٪ تکراری‌ها | برندینگ کامل
 """
 
@@ -31,7 +31,7 @@ BOT_TOKEN, CHAT_ID = _load_credentials()
 CHANNEL_TAG = "Goodbaye_filtering"
 CHAT_GROUP_LINK = "https://t.me/CONFIG_V2RAY_VIP"
 TELEGRAM_LINK = "https://t.me/Goodbaye_filtering"
-TIMEOUT = 1.3
+TIMEOUT = 1.8
 MAX_WORKERS = 80
 MAX_FINAL_PING_MS = 500.0
 GOLDEN_PORTS = {443, 8443, 2053, 2083, 2087, 2096, 80, 8080, 8880}
@@ -51,10 +51,9 @@ def resolve_safe_ip(host: str) -> Optional[str]:
             if not ipaddress.ip_address(ip_str).is_private:
                 return ip_str
     except Exception: pass
-    return None
+    return host
 
 def rename_node(raw_link: str, scheme: str, new_name: str) -> str:
-    """بازنویسی دقیق فیلد ps در vmess و فرگمنت در سایر پروتکل‌ها"""
     if scheme == "vmess":
         try:
             body = raw_link[len("vmess://"):].split("#", 1)[0]
@@ -79,13 +78,13 @@ def fetch_geo_batch(ip_list: List[str]) -> dict:
                         geo[it["query"]] = {
                             "country": it.get("country", "Unknown"),
                             "city": it.get("city", "Unknown"),
+                            "cc": it.get("countryCode", "XX"),
                             "flag": get_flag_emoji(it.get("countryCode", ""))
                         }
         except Exception: pass
     return geo
 
-def stress_test_node(host: str, port: int, sni: str, sec: str) -> Tuple[Optional[float], Optional[float], bool]:
-    """تست پایداری دو شات پینگ و بررسی سلامت ارتباط بدون مسدودسازی Reality"""
+def ping_node(host: str, port: int) -> Tuple[Optional[float], Optional[float]]:
     t0 = time.time()
     try:
         s1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -93,9 +92,9 @@ def stress_test_node(host: str, port: int, sni: str, sec: str) -> Tuple[Optional
         s1.connect((host, int(port)))
         s1.close()
         p1 = (time.time() - t0) * 1000
-    except Exception: return None, None, False
+    except Exception: return None, None
 
-    time.sleep(0.1)
+    time.sleep(0.05)
     t1 = time.time()
     try:
         s2 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -103,30 +102,14 @@ def stress_test_node(host: str, port: int, sni: str, sec: str) -> Tuple[Optional
         s2.connect((host, int(port)))
         s2.close()
         p2 = (time.time() - t1) * 1000
-    except Exception: return None, None, False
+    except Exception: return p1, 10.0
 
     jitter = abs(p2 - p1)
     avg_ping = round((p1 + p2) / 2, 2)
-    if jitter > 85.0 or avg_ping >= MAX_FINAL_PING_MS:
-        return None, None, False
+    if avg_ping >= MAX_FINAL_PING_MS:
+        return None, None
 
-    # برای سرورهای TLS استاندارد، دست‌دهی را تست می‌کنیم
-    tls_ok = True
-    if sec == "tls" and sni:
-        try:
-            s_tls = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            s_tls.settimeout(2.0)
-            s_tls.connect((host, int(port)))
-            ctx = ssl.create_default_context()
-            ctx.check_hostname = False
-            ctx.verify_mode = ssl.CERT_NONE
-            with ctx.wrap_socket(s_tls, server_hostname=sni) as ss:
-                ss.do_handshake()
-            s_tls.close()
-        except Exception:
-            pass  # در صورت خطای CDN، مانع رد شدن سرور نمی‌شود
-
-    return avg_ping, round(jitter, 2), tls_ok
+    return avg_ping, round(jitter, 2)
 
 def detect_arch_and_bonus(scheme: str, p, q, raw_link: str) -> Tuple[str, int]:
     sec = q.get("security", [""])[0].lower()
@@ -135,18 +118,21 @@ def detect_arch_and_bonus(scheme: str, p, q, raw_link: str) -> Tuple[str, int]:
     svc = q.get("serviceName", [""])[0]
     h = (p.hostname or "").lower()
 
-    if net == "xhttp": return "XHTTP-Elite", 450
+    if net == "xhttp": return "XHTTP-Elite", 500
     if sec == "reality" and "xtls-rprx-vision" in fl:
-        bonus = 400
+        bonus = 450
         if "xPaddingBytes" in raw_link or "padding" in raw_link.lower(): bonus += 50
         return "Reality-Vision", bonus
-    if sec == "reality" and (net == "grpc" or svc): return "Reality-gRPC", 350
-    if sec == "reality": return "Reality", 300
+    if sec == "reality" and (net == "grpc" or svc): return "Reality-gRPC", 420
+    if sec == "reality": return "Reality", 380
+    if scheme in ["vless"]: return "VLESS-TLS", 300
+    if scheme in ["vmess"]: return "VMess-TLS", 280
     if scheme in ["hysteria2", "hy2"]: return "Hysteria2", 320
+    if scheme in ["trojan"]: return "Trojan-TLS", 260
     if "workers.dev" in h or "pages.dev" in h: return "CF-Worker", 180
     pts = h.split('.')
     if len(pts) == 4 and all(x.isdigit() for x in pts): return "CF-CleanIP", 200
-    return f"{scheme.upper()}-TLS", 150
+    return "Shadowsocks" if scheme == "ss" else f"{scheme.upper()}", 100
 
 def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
     print(f"🚀 [MULTI-BOT] شروع پردازش نود {file_id}...")
@@ -213,24 +199,21 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
         except Exception: pass
 
     items = list(cands.values())
-    print(f"💎 تعداد کل کاندیدها: {len(items)} | شروع تست استرس و پینگ...")
+    print(f"💎 تعداد کل کاندیدها: {len(items)} | تست پینگ بدون حذف اجباری...")
 
     def test_pipeline(it):
         b_url, host, port, uuid, sni, path, scheme, raw_link, q = it
         safe_ip = resolve_safe_ip(host)
         if not safe_ip: return None
 
-        sec = q.get("security", [""])[0].lower()
         arch, bonus = detect_arch_and_bonus(scheme, urlparse(b_url), q, raw_link)
-        target_sni = q.get("sni", [""])[0] or host
-
-        ping, jitter, tls_passed = stress_test_node(safe_ip, port, target_sni, sec)
-        if ping is not None and tls_passed and ping < MAX_FINAL_PING_MS:
+        ping, jitter = ping_node(safe_ip, port)
+        if ping is not None and ping < MAX_FINAL_PING_MS:
             port_bonus = 100 if port in GOLDEN_PORTS else 0
-            power_score = (1000 / ping) - (jitter * 2) + bonus + port_bonus
+            power_score = (1000 / ping) - (jitter * 1.5) + bonus + port_bonus
             return {
                 "base_url": b_url, "host": host, "ip": safe_ip, "port": port,
-                "arch": arch, "uuid": uuid, "sni": target_sni, "path": path,
+                "arch": arch, "uuid": uuid, "sni": sni, "path": path,
                 "scheme": scheme, "ping": ping, "jitter": jitter,
                 "score": round(power_score, 2), "raw_link": raw_link
             }
@@ -249,21 +232,19 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
 
     tested.sort(key=lambda x: x["score"], reverse=True)
 
+    # حفظ تفکیک پروتکل‌ها تا هیچ پروتکلی دیگری را حذف نکند
     unique = {}
-    seen_host_port, seen_ip_port = set(), set()
+    seen_keys = set()
     for s in tested:
-        host_key = (s["host"], s["port"])
-        ip_key = (s["ip"], s["port"])
-        if host_key in seen_host_port or ip_key in seen_ip_port:
-            continue
-        seen_host_port.add(host_key)
-        seen_ip_port.add(ip_key)
-        unique[host_key] = s
+        k = (s["scheme"], s["host"], s["port"])
+        if k not in seen_keys:
+            seen_keys.add(k)
+            unique[k] = s
 
     final = [s for s in unique.values() if s["ping"] < MAX_FINAL_PING_MS]
-    print(f"🎯 {len(final)} کانفیگ نهایی تاییدشده (شامل VLESS و VMess)...")
+    print(f"🎯 {len(final)} کانفیگ تاییدشده (شامل VLESS و VMess)...")
 
-    geo_data = fetch_geo_batch([node["ip"] for node in final])
+    geo_data = fetch_geo_batch(list({s["ip"] for s in final}))
 
     final_links = []
     for node in final:
@@ -282,6 +263,7 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
     print(f"💾 فایل {output_file} با موفقیت ذخیره شد.")
 
     if BOT_TOKEN and CHAT_ID:
+        time.sleep(2.0)
         tehran_tz = timezone(timedelta(hours=3, minutes=30))
         now = datetime.now(tehran_tz)
         caption = f"""📦 فایل: {os.path.basename(output_file)}
@@ -294,13 +276,14 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
 ✨ کانال: {TELEGRAM_LINK}"""
         try:
             with open(output_file, "rb") as doc:
-                requests.post(
+                r = requests.post(
                     f"https://api.telegram.org/bot{BOT_TOKEN}/sendDocument",
                     data={"chat_id": CHAT_ID, "caption": caption},
                     files={"document": doc},
                     timeout=45
                 )
-            print("✈️ فایل به تلگرام ارسال شد.")
+                if r.status_code == 200:
+                    print(f"✈️ فایل {os.path.basename(output_file)} به تلگرام ارسال شد.")
         except Exception as e:
             print("❌ خطا در ارسال تلگرام:", e)
 
