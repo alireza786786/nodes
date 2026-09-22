@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 🏛️ Master Multi-Bot Orchestrator & Dynamic README Generator
-ساخت خودکار تمام پوشه‌ها، پر کردن VLESS/VMess و تولید زنده جدول کشورها و QR کدها
+الگوبرداری از برترین مخازن دنیا: تولید زنده جدول نودها و کدهای QR
 """
 
 import os
@@ -53,9 +53,7 @@ def extract_transport(line: str) -> str:
     return "other"
 
 def generate_dynamic_readme(by_country, by_proto, total_nodes, date_str, time_str):
-    """تولید کاملاً خودکار جدول صفحه اول دقیقاً مطابق عکس ارسالی شما با بارکدها و تعداد زنده"""
-    
-    # مرتب‌سازی کشورها بر اساس بیشترین تعداد سرور
+    # جدول کشورها (مرتب‌شده بر اساس بیشترین تعداد نود)
     sorted_countries = sorted(by_country.items(), key=lambda x: len(x[1]["nodes"]), reverse=True)
     
     country_rows = []
@@ -66,7 +64,7 @@ def generate_dynamic_readme(by_country, by_proto, total_nodes, date_str, time_st
         file_url = f"{REPO_RAW_BASE}/Country/{clean_name}.txt"
         qr_url = f"https://api.qrserver.com/v1/create-qr-code/?size=100x100&data={file_url}"
         
-        row = f"""| {flag} {raw_name} | **{count}** | [📄 دانلود کانفیگ‌ها]({file_url}) | <img src="{qr_url}" width="65"/> |"""
+        row = f"| {flag} {raw_name} | **{count}** | [📄 دانلود سابسکریپشن]({file_url}) | <img src=\"{qr_url}\" width=\"65\"/> |"
         country_rows.append(row)
 
     country_table_md = "\n".join(country_rows)
@@ -85,15 +83,16 @@ def generate_dynamic_readme(by_country, by_proto, total_nodes, date_str, time_st
 
     readme_content = f"""<div align="center">
 
-# 🛡️ NODES HYPER-HUB (V2Ray / Xray Master Hub)
-### مرجع رسمی توزیع، پالایش و سابسکریپشن ضد فیلترینگ
+# 🛡️ NODES HYPER-HUB
+### مرجع جامع، خودکار و چندپروتکله سابسکریپشن ضد فیلترینگ
 
 ![Nodes](https://img.shields.io/badge/Active%20Nodes-{total_nodes}%20Online-success?style=for-the-badge&logo=speedtest&logoColor=white)
+![Latency](https://img.shields.io/badge/Ping-%3C%20500ms-orange?style=for-the-badge&logo=cloudflare&logoColor=white)
 ![Updated](https://img.shields.io/badge/Updated-{time_str}%20Tehran-blue?style=for-the-badge&logo=clock&logoColor=white)
 
 ---
 
-### 📱 کانال رسمی و اتصال مستقیم تلگرام
+### 📱 کانال رسمی و عضویت تلگرام
 
 <table>
   <tr>
@@ -119,9 +118,8 @@ def generate_dynamic_readme(by_country, by_proto, total_nodes, date_str, time_st
 ---
 
 ## 🌐 تفکیک بر اساس کشورها (By Country)
-> در این جدول، سرورها بر اساس کشور مرتب شده‌اند و هر ردیف دارای **تعداد نودهای زنده**، **لینک مستقیم** و **کد QR اختصاصی** است:
 
-| کشور (Country) | تعداد نودها (Nodes) | لینک مستقیم سابسکریپشن | اسکن بارکد (QR Code) |
+| کشور (Country) | تعداد نودها (Nodes) | لینک سابسکریپشن | اسکن بارکد (QR Code) |
 | :--- | :---: | :---: | :---: |
 {country_table_md}
 
@@ -129,7 +127,7 @@ def generate_dynamic_readme(by_country, by_proto, total_nodes, date_str, time_st
 
 ## ⚡ تفکیک بر اساس پروتکل‌ها (By Protocol)
 
-| پروتکل (Protocol) | تعداد نودها (Nodes) | لینک مستقیم سابسکریپشن | اسکن بارکد (QR Code) |
+| پروتکل (Protocol) | تعداد نودها (Nodes) | لینک سابسکریپشن | اسکن بارکد (QR Code) |
 | :--- | :---: | :---: | :---: |
 {proto_table_md}
 
@@ -150,10 +148,10 @@ def generate_dynamic_readme(by_country, by_proto, total_nodes, date_str, time_st
 """
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme_content)
-    print("🌟 فایل README.md با جدول‌های پویا و بارکدهای QR با موفقیت بازنویسی شد!")
+    print("🌟 فایل README.md با جدول‌های پویا و بارکدهای QR بازنویسی شد!")
 
 def main():
-    print("🚀 [ORCHESTRATOR] شروع پردازش نهایی و تولید هاب زنده...")
+    print("🚀 [RUNNER] شروع پردازش سراسری بسته‌های guard...")
     date_str, time_str = get_tehran_time()
 
     with open("sources.json", "r", encoding="utf-8") as f:
@@ -217,24 +215,25 @@ def main():
         if clean_c != "Global" and clean_c != "Other":
             by_country.setdefault(clean_c, {"flag": flag, "name": raw_country, "nodes": []})["nodes"].append(node)
 
-    # نوشتن فایل‌های Config/ (شامل vless و vmess و بقیه)
+    # ایجاد فایل‌های تفکیک‌شده پروتکل‌ها در پوشه Config
     for proto, nodes in by_proto.items():
         fname = f"Config/{proto}.txt"
         with open(fname, "w", encoding="utf-8") as f:
             f.write("\n".join(nodes) + "\n")
         print(f"📁 فایل Config/{proto}.txt با {len(nodes)} نود ایجاد شد.")
 
-    # نوشتن فایل‌های transports/
+    # ایجاد فایل‌های بسترهای انتقال
     for trans, nodes in by_trans.items():
         fname = f"transports/{trans}.txt"
         with open(fname, "w", encoding="utf-8") as f:
             f.write("\n".join(nodes) + "\n")
 
-    # نوشتن فایل‌های Country/
+    # ایجاد فایل‌های کشوری در پوشه Country
     for clean_c, data in by_country.items():
         fname = f"Country/{clean_c}.txt"
         with open(fname, "w", encoding="utf-8") as f:
             f.write("\n".join(data["nodes"]) + "\n")
+        print(f"📁 فایل Country/{clean_c}.txt با {len(data['nodes'])} نود ایجاد شد.")
 
     # ذخیره فایل آرشیو کل
     with open("all.txt", "w", encoding="utf-8") as f:
@@ -244,7 +243,7 @@ def main():
     with open("all_b64.txt", "w", encoding="utf-8") as f:
         f.write(b64_all)
 
-    # تولید جادویی صفحه README.md زنده
+    # تولید پویا و زنده فایل README.md صفحه اول با جدول و کدهای QR
     generate_dynamic_readme(by_country, by_proto, total_unique, date_str, time_str)
     print("✅ تمام پوشه‌ها پر شدند و صفحه اصلی با بارکدها و جدول‌های زنده ساخته شد.")
 
