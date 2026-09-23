@@ -57,7 +57,7 @@ def fetch_geo_batch(ip_list: List[str]) -> dict:
         chunk = ip_list[i:i+100]
         try:
             r = requests.post("http://ip-api.com/batch?fields=query,status,country,city,countryCode", 
-                              json=chunk, timeout=12)
+                            json=chunk, timeout=12)
             if r.status_code == 200:
                 for it in r.json():
                     if it.get("status") == "success":
@@ -71,7 +71,6 @@ def fetch_geo_batch(ip_list: List[str]) -> dict:
     return geo
 
 def ping_node(host: str, port: int) -> Tuple[Optional[float], Optional[float]]:
-    """تست دست‌دهی با سوکت استاندارد Dual-Stack (IPv4 و IPv6 بدون کرش)"""
     t0 = time.time()
     try:
         with socket.create_connection((host, int(port)), timeout=TIMEOUT):
@@ -159,8 +158,16 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
             if scheme == "vmess":
                 body = l[len("vmess://"):].split("#", 1)[0]
                 pad = "=" * (-len(body) % 4)
-                d = json.loads(base64.b64decode(body + pad).decode("utf-8", errors="ignore"))
-                h, pt = str(d.get("add", "")).strip().lower(), int(d.get("port", 0))
+                try:
+                    d = json.loads(base64.b64decode(body + pad).decode("utf-8", errors="ignore"))
+                except Exception:
+                    continue
+                
+                h = str(d.get("add", "")).strip().lower()
+                pt_raw = d.get("port", 443)
+                try: pt = int(pt_raw)
+                except: pt = 443
+                
                 sec = str(d.get("tls", "")).lower()
                 uid = str(d.get("id", "")).strip().lower()
                 sni = str(d.get("sni", "")).lower()
@@ -169,17 +176,22 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
             else:
                 p = urlparse(l)
                 q = parse_qs(p.query)
-                h, pt = (p.hostname or "").strip().lower(), int(p.port or 0)
+                h = (p.hostname or "").strip().lower()
+                pt = p.port
+                if not pt:
+                    pt = 443 if p.scheme in ["vless", "trojan", "hysteria2", "hy2"] else 80
                 sec = q.get("security", [""])[0].lower()
                 uid = (p.username or "").strip().lower()
                 sni = q.get("sni", [""])[0].lower()
                 path = q.get("path", [""])[0] or q.get("serviceName", [""])[0]
 
-            if not h or not pt: continue
+            if not h or not pt: 
+                continue
             k = (scheme, uid, h, pt)
             if k not in cands:
                 cands[k] = (b_url, h, pt, uid, sni, path, scheme, l, q)
-        except Exception: pass
+        except Exception: 
+            pass
 
     items = list(cands.values())
     print(f"💎 تعداد کل کاندیدها: {len(items)} | شروع تست شبکه...")
@@ -212,7 +224,6 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
 
     tested.sort(key=lambda x: x["score"], reverse=True)
 
-    # حفظ تفکیک پروتکل‌ها
     unique = {}
     seen_keys = set()
     for s in tested:
@@ -224,7 +235,6 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
     final = [s for s in unique.values() if s["ping"] < MAX_FINAL_PING_MS]
     print(f"🎯 {len(final)} کانفیگ تاییدشده (شامل VLESS و VMess)...")
 
-    # استعلام جغرافیا
     geo_data = fetch_geo_batch(list({s["host"] for s in final}))
 
     final_links = []
