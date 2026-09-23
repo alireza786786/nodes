@@ -35,13 +35,16 @@ jobs:
           SOURCES_DATA: ${{ secrets.SOURCES_DATA }}
         run: python multi_bot/runner.py
 
+      - name: Run Country and UI Synchronizer
+        run: python update_hub.py
+
       - name: Commit Updated Hub Files
         run: |
           git config user.name "Hub-Bot"
           git config user.email "bot@github.com"
           git add Subscription/ Config/ Country/ transports/ all.txt all_b64.txt 2>/dev/null || true
           if ! git diff --cached --quiet; then
-            git commit -m "Auto Update Hub: $(date -u +'%Y-%m-%d %H:%M')"
+            git commit -m "Auto Update Hub: Sync Countries and README Tables $(date -u +'%Y-%m-%d %H:%M')"
             git push origin main
           else
             echo "تغییری برای ذخیره وجود نداشت."
