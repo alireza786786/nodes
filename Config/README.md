@@ -3,11 +3,11 @@
 
 | پروتکل (Protocol) | تعداد نودها (Nodes) | لینک مستقیم سابسکریپشن | اسکن بارکد (QR Code) |
 | :--- | :---: | :---: | :---: |
-| **SS** | **10231** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/ss.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/ss.txt" width="60"/> |
-| **TROJAN** | **309** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/trojan.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/trojan.txt" width="60"/> |
+| **SS** | **10286** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/ss.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/ss.txt" width="60"/> |
+| **TROJAN** | **272** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/trojan.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/trojan.txt" width="60"/> |
 | **HYSTERIA2** | **47** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/hysteria2.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/hysteria2.txt" width="60"/> |
-| **SOCKS** | **8** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/socks.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/socks.txt" width="60"/> |
+| **SOCKS** | **5** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/socks.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/socks.txt" width="60"/> |
 
 ---
-> 🕒 آخرین بروزرسانی: 2026-09-23 ساعت 09:32:24 به وقت تهران  
+> 🕒 آخرین بروزرسانی: 2026-09-23 ساعت 12:58:22 به وقت تهران  
 > 📢 کانال رسمی: [@Goodbaye_filtering](https://t.me/Goodbaye_filtering) | 💬 گروه: [@CONFIG_V2RAY_VIP](https://t.me/CONFIG_V2RAY_VIP)
