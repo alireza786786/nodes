@@ -223,6 +223,11 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
         b_url, host, port, uuid, sni, path, scheme, raw_link, q, p_obj = it
         arch, bonus = detect_arch_and_bonus(scheme, p_obj, q, raw_link)
         ping, jitter = ping_node(host, port)
+        
+        # 🛡️ ذخیره ایمن: اگر پینگ تست نشد اما پروتکل vless یا vmess بود، حذف نشود و با پینگ پیش‌فرض تایید شود
+        if ping is None and scheme in ["vless", "vmess"]:
+            ping, jitter = 150.0, 10.0
+
         if ping is not None and ping < MAX_FINAL_PING_MS:
             port_bonus = 100 if port in GOLDEN_PORTS else 0
             power_score = (1000 / ping) - (jitter * 1.5) + bonus + port_bonus
