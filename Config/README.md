@@ -1,19 +1,13 @@
 # 📁 مرکز پروتکل‌های اختصاصی (Protocols Hub)
-### دسته‌بندی کانفیگ‌ها بر اساس نوع معماری و هسته پروتکل
+### تفکیک زنده بر اساس نوع پروتکل، تعداد نودها و کدهای QR
 
-در این بخش، تمام کانفیگ‌های تاییدشده و سالم بر اساس ۸ پروتکل استاندارد تفکیک شده و پس از اجرای موتور در فایل‌های مربوطه قرار می‌گیرند:
-
-| ردیف | نام فایل | پروتکل | توضیحات فنی |
-| :---: | :--- | :--- | :--- |
-| ۱ | `vless.txt` | **VLESS** | معماری سبک و پایدار همراه با لایه Reality و Vision |
-| ۲ | `vmess.txt` | **VMess** | با بازنویسی کامل فیلد JSON `"ps"` به نام کانال |
-| ۳ | `ss.txt` | **Shadowsocks** | پروتکل استاندارد و نسخه ۲۰۲۲ ضد Replay |
-| ۴ | `trojan.txt` | **Trojan** | شبیه‌سازی کامل ترافیک HTTPS معتبر |
-| ۵ | `socks.txt` | **SOCKS5** | درگاه‌های اختصاصی پروکسی امن |
-| ۶ | `hysteria2.txt` | **Hysteria 2** | سرعت موشکی بر بستر UDP/QUIC (مناسب اینترنت همراه) |
-| ۷ | `http.txt` | **XHTTP / HTTP** | پروتکل نوین پسا-کوانتومی با ترنسپورت چندمسیره |
-| ۸ | `wireguard.txt` | **WireGuard** | اتصالات فوق‌العاده پایدار تونل لایه ۳ |
+| پروتکل (Protocol) | تعداد نودها (Nodes) | لینک مستقیم سابسکریپشن | اسکن بارکد (QR Code) |
+| :--- | :---: | :---: | :---: |
+| **SS** | **10625** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/ss.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/ss.txt" width="60"/> |
+| **TROJAN** | **306** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/trojan.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/trojan.txt" width="60"/> |
+| **HYSTERIA2** | **44** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/hysteria2.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/hysteria2.txt" width="60"/> |
+| **SOCKS** | **7** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/socks.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/socks.txt" width="60"/> |
 
 ---
-> 📢 کانال رسمی: **[@Goodbaye_filtering](https://t.me/Goodbaye_filtering)**  
-> 💬 گروه تبادل: **[@CONFIG_V2RAY_VIP](https://t.me/CONFIG_V2RAY_VIP)**
+> 🕒 آخرین بروزرسانی: 2026-09-23 ساعت 08:35:00 به وقت تهران  
+> 📢 کانال رسمی: [@Goodbaye_filtering](https://t.me/Goodbaye_filtering) | 💬 گروه: [@CONFIG_V2RAY_VIP](https://t.me/CONFIG_V2RAY_VIP)
