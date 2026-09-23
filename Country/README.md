@@ -6,5 +6,5 @@
 | 🌐 Global | **0** | - | - |
 
 ---
-> 🕒 آخرین بروزرسانی: 2026-09-23 ساعت 13:40:08 به وقت تهران  
+> 🕒 آخرین بروزرسانی: 2026-09-23 ساعت 14:04:16 به وقت تهران  
 > 📢 کانال رسمی: [@Goodbaye_filtering](https://t.me/Goodbaye_filtering) | 💬 گروه: [@CONFIG_V2RAY_VIP](https://t.me/CONFIG_V2RAY_VIP)
