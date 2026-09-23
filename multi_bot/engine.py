@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-🏛️ Mega-Engine: Multi-Bot Universal Processor (All Protocols Enabled)
-پوشش کامل: VLESS (Reality/Vision/gRPC), VMess (با بازنویسی فیلد ps), Trojan, Shadowsocks, Hysteria2, SOCKS5
+🏛️ Mega-Engine: Multi-Bot Universal Processor (Dual-Stack IPv4/IPv6)
+پوشش تضمینی: VLESS (Reality/Vision/gRPC), VMess (با بازنویسی فیلد ps), Trojan, Shadowsocks, Hysteria2, SOCKS5
 """
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -30,28 +30,13 @@ BOT_TOKEN, CHAT_ID = _load_credentials()
 CHANNEL_TAG = "Goodbaye_filtering"
 CHAT_GROUP_LINK = "https://t.me/CONFIG_V2RAY_VIP"
 TELEGRAM_LINK = "https://t.me/Goodbaye_filtering"
-TIMEOUT = 1.8
+TIMEOUT = 2.0
 MAX_WORKERS = 80
 MAX_FINAL_PING_MS = 500.0
 GOLDEN_PORTS = {443, 8443, 2053, 2083, 2087, 2096, 80, 8080, 8880}
 
 def get_flag_emoji(c: str) -> str:
     return "".join(chr(127397 + ord(x.upper())) for x in c) if c and len(c) == 2 else "🌐"
-
-def resolve_safe_ip(host: str) -> str:
-    try:
-        ip_obj = ipaddress.ip_address(host)
-        if ip_obj.is_private or ip_obj.is_loopback: return ""
-        return host
-    except ValueError: pass
-    try:
-        infos = socket.getaddrinfo(host, None)
-        for info in infos:
-            ip_str = info[4][0]
-            if not ipaddress.ip_address(ip_str).is_private:
-                return ip_str
-    except Exception: pass
-    return host
 
 def rename_node(raw_link: str, scheme: str, new_name: str) -> str:
     if scheme == "vmess":
@@ -69,39 +54,38 @@ def rename_node(raw_link: str, scheme: str, new_name: str) -> str:
 def fetch_geo_batch(ip_list: List[str]) -> dict:
     geo = {}
     for i in range(0, len(ip_list), 100):
+        chunk = ip_list[i:i+100]
         try:
             r = requests.post("http://ip-api.com/batch?fields=query,status,country,city,countryCode", 
-                              json=ip_list[i:i+100], timeout=10)
+                              json=chunk, timeout=12)
             if r.status_code == 200:
                 for it in r.json():
                     if it.get("status") == "success":
                         geo[it["query"]] = {
                             "country": it.get("country", "Unknown"),
                             "city": it.get("city", "Unknown"),
+                            "cc": it.get("countryCode", "XX"),
                             "flag": get_flag_emoji(it.get("countryCode", ""))
                         }
         except Exception: pass
     return geo
 
 def ping_node(host: str, port: int) -> Tuple[Optional[float], Optional[float]]:
+    """تست دست‌دهی با سوکت استاندارد Dual-Stack (IPv4 و IPv6 بدون کرش)"""
     t0 = time.time()
     try:
-        s1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s1.settimeout(TIMEOUT)
-        s1.connect((host, int(port)))
-        s1.close()
+        with socket.create_connection((host, int(port)), timeout=TIMEOUT):
+            pass
         p1 = (time.time() - t0) * 1000
     except Exception: return None, None
 
-    time.sleep(0.05)
+    time.sleep(0.04)
     t1 = time.time()
     try:
-        s2 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s2.settimeout(TIMEOUT)
-        s2.connect((host, int(port)))
-        s2.close()
+        with socket.create_connection((host, int(port)), timeout=TIMEOUT):
+            pass
         p2 = (time.time() - t1) * 1000
-    except Exception: return p1, 10.0
+    except Exception: return round(p1, 2), 10.0
 
     jitter = abs(p2 - p1)
     avg_ping = round((p1 + p2) / 2, 2)
@@ -134,7 +118,7 @@ def detect_arch_and_bonus(scheme: str, p, q, raw_link: str) -> Tuple[str, int]:
     return "Shadowsocks" if scheme == "ss" else f"{scheme.upper()}", 100
 
 def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
-    print(f"🚀 [MULTI-BOT] شروع پردازش نود {file_id}...")
+    print(f"🚀 [MULTI-BOT] پردازش نود {file_id}...")
     headers = {"User-Agent": "Mozilla/5.0"}
     all_links = []
     
@@ -144,8 +128,6 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
             r = requests.get(target, headers=headers, timeout=14)
             if r.status_code != 200: continue
             txt = r.text.strip()
-            
-            # در صورتی که فایل Base64 باشد
             if not any(p in txt for p in ["vless://", "vmess://", "ss://", "trojan://", "hysteria2://"]):
                 try:
                     s = "".join(txt.split())
@@ -200,20 +182,17 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
         except Exception: pass
 
     items = list(cands.values())
-    print(f"💎 تعداد کل کاندیدها: {len(items)} | شروع تست پینگ...")
+    print(f"💎 تعداد کل کاندیدها: {len(items)} | شروع تست شبکه...")
 
     def test_pipeline(it):
         b_url, host, port, uuid, sni, path, scheme, raw_link, q = it
-        safe_ip = resolve_safe_ip(host)
-        if not safe_ip: return None
-
         arch, bonus = detect_arch_and_bonus(scheme, urlparse(b_url), q, raw_link)
-        ping, jitter = ping_node(safe_ip, port)
+        ping, jitter = ping_node(host, port)
         if ping is not None and ping < MAX_FINAL_PING_MS:
             port_bonus = 100 if port in GOLDEN_PORTS else 0
             power_score = (1000 / ping) - (jitter * 1.5) + bonus + port_bonus
             return {
-                "base_url": b_url, "host": host, "ip": safe_ip, "port": port,
+                "base_url": b_url, "host": host, "port": port,
                 "arch": arch, "uuid": uuid, "sni": sni, "path": path,
                 "scheme": scheme, "ping": ping, "jitter": jitter,
                 "score": round(power_score, 2), "raw_link": raw_link
@@ -233,6 +212,7 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
 
     tested.sort(key=lambda x: x["score"], reverse=True)
 
+    # حفظ تفکیک پروتکل‌ها
     unique = {}
     seen_keys = set()
     for s in tested:
@@ -244,11 +224,12 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
     final = [s for s in unique.values() if s["ping"] < MAX_FINAL_PING_MS]
     print(f"🎯 {len(final)} کانفیگ تاییدشده (شامل VLESS و VMess)...")
 
-    geo_data = fetch_geo_batch(list({s["ip"] for s in final}))
+    # استعلام جغرافیا
+    geo_data = fetch_geo_batch(list({s["host"] for s in final}))
 
     final_links = []
     for node in final:
-        info = geo_data.get(node["ip"], {"country": "Unknown", "city": "Unknown", "flag": "🌐"})
+        info = geo_data.get(node["host"], {"country": "Unknown", "city": "Unknown", "flag": "🌐"})
         new_name = (
             f"👉🆔@{CHANNEL_TAG}📡{info['flag']}®️{info['country']}©️{info['city']}"
             f"🅿️ping:{node['ping']:.1f}ms⚡️{node['arch']}"
@@ -260,31 +241,4 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("\n".join(final_links) + "\n")
 
-    print(f"💾 فایل {output_file} با موفقیت ذخیره شد.")
-
-    if BOT_TOKEN and CHAT_ID:
-        time.sleep(2.0)
-        tehran_tz = timezone(timedelta(hours=3, minutes=30))
-        now = datetime.now(tehran_tz)
-        caption = f"""📦 فایل: {os.path.basename(output_file)}
-📊 تعداد: {len(final_links)} کانفیگ تاییدشده
-⏱️ پینگ واقعی: همگی < 500ms
-🕒 ساعت بروزرسانی: {now.strftime('%H:%M:%S')} (تهران)
-📅 تاریخ میلادی: {now.strftime('%Y-%m-%d')}
-
-💬 گروه: {CHAT_GROUP_LINK}
-✨ کانال: {TELEGRAM_LINK}"""
-        try:
-            with open(output_file, "rb") as doc:
-                r = requests.post(
-                    f"https://api.telegram.org/bot{BOT_TOKEN}/sendDocument",
-                    data={"chat_id": CHAT_ID, "caption": caption},
-                    files={"document": doc},
-                    timeout=45
-                )
-                if r.status_code == 200:
-                    print(f"✈️ فایل {os.path.basename(output_file)} به تلگرام ارسال شد.")
-        except Exception as e:
-            print("❌ خطا در ارسال تلگرام:", e)
-
-    return final_links
+    print(f"💾 فایل {output_file} ذ
