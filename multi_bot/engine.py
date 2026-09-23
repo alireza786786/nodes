@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-🏛️ Mega-Engine: Multi-Bot Universal Processor (Dual-Stack IPv4/IPv6)
-پوشش تضمینی: VLESS (Reality/Vision/gRPC), VMess (با بازنویسی فیلد ps), Trojan, Shadowsocks, Hysteria2, SOCKS5
+🏛️ Mega-Engine: Multi-Bot Universal Processor (Dual-Stack IPv4/IPv6) - Debug Version
+پوشش تضمینی و عیب‌یابی پیشرفته: VLESS, VMess, Trojan, Shadowsocks, Hysteria2
 """
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -98,7 +98,7 @@ def detect_arch_and_bonus(scheme: str, p, q, raw_link: str) -> Tuple[str, int]:
     net = q.get("type", [""])[0].lower()
     fl = q.get("flow", [""])[0].lower()
     svc = q.get("serviceName", [""])[0]
-    h = (p.hostname or "").lower()
+    h = (p.hostname or "").lower() if p else ""
 
     if net == "xhttp": return "XHTTP-Elite", 500
     if sec == "reality" and "xtls-rprx-vision" in fl:
@@ -117,7 +117,7 @@ def detect_arch_and_bonus(scheme: str, p, q, raw_link: str) -> Tuple[str, int]:
     return "Shadowsocks" if scheme == "ss" else f"{scheme.upper()}", 100
 
 def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
-    print(f"🚀 [MULTI-BOT] پردازش نود {file_id}...")
+    print(f"🚀 [DEBUG-ENGINE] شروع پردازش بسته {file_id}...")
     headers = {"User-Agent": "Mozilla/5.0"}
     all_links = []
     
@@ -125,7 +125,9 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
         target = u.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/").replace("/raw/", "/")
         try:
             r = requests.get(target, headers=headers, timeout=14)
-            if r.status_code != 200: continue
+            if r.status_code != 200: 
+                print(f"⚠️ خطا در دانلود سورس (Status {r.status_code}): {target}")
+                continue
             txt = r.text.strip()
             if not any(p in txt for p in ["vless://", "vmess://", "ss://", "trojan://", "hysteria2://"]):
                 try:
@@ -138,20 +140,33 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
                 except Exception: pass
             
             pattern = r'(?=(?:vless|vmess|ss|trojan|hysteria2|hy2|socks|socks5)://)'
+            extracted_count = 0
             for l in re.split(pattern, txt):
                 l = l.strip()
                 if any(l.startswith(p) for p in ["vless://", "vmess://", "ss://", "trojan://", "hysteria2://", "hy2://", "socks://", "socks5://"]):
-                    all_links.append(l.splitlines()[0].strip().split()[0])
-            print(f"✅ سورس بارگیری شد: {target.split('/')[-1]}")
-        except Exception: pass
+                    clean_l = l.splitlines()[0].strip().split()[0]
+                    all_links.append(clean_l)
+                    extracted_count += 1
+            print(f"✅ سورس بارگیری شد ({extracted_count} لینک): {target.split('/')[-1]}")
+        except Exception as e:
+            print(f"❌ خطا در پردازش سورس {target}: {e}")
+
+    # 📊 گزارش آماری پروتکل‌های استخراج شده قبل از تست
+    proto_counts = {}
+    for l in all_links:
+        sc = l.split("://")[0].lower()
+        proto_counts[sc] = proto_counts.get(sc, 0) + 1
+    print(f"📊 [آمار خام استخراج‌شده] => {proto_counts}")
 
     if not all_links:
-        print("❌ کانفیگی یافت نشد.")
+        print("❌ هیچ کانفیگی از این سورس‌ها استخراج نشد!")
         return []
 
     cands = {}
     for l in all_links:
         try:
+            l = l.strip()
+            if "://" not in l: continue
             scheme = l.split("://")[0].lower()
             b_url = l.split("#")[0]
 
@@ -162,43 +177,51 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
                     d = json.loads(base64.b64decode(body + pad).decode("utf-8", errors="ignore"))
                 except Exception:
                     continue
-                
                 h = str(d.get("add", "")).strip().lower()
                 pt_raw = d.get("port", 443)
                 try: pt = int(pt_raw)
                 except: pt = 443
-                
                 sec = str(d.get("tls", "")).lower()
                 uid = str(d.get("id", "")).strip().lower()
                 sni = str(d.get("sni", "")).lower()
                 path = str(d.get("path", ""))
                 q = {"security": [sec], "type": [d.get("net", "ws")], "path": [path], "sni": [sni]}
+                p_obj = None
             else:
-                p = urlparse(l)
-                q = parse_qs(p.query)
-                h = (p.hostname or "").strip().lower()
-                pt = p.port
-                if not pt:
-                    pt = 443 if p.scheme in ["vless", "trojan", "hysteria2", "hy2"] else 80
-                sec = q.get("security", [""])[0].lower()
-                uid = (p.username or "").strip().lower()
-                sni = q.get("sni", [""])[0].lower()
-                path = q.get("path", [""])[0] or q.get("serviceName", [""])[0]
+                try:
+                    p_obj = urlparse(l)
+                    q = parse_qs(p_obj.query)
+                    h = (p_obj.hostname or "").strip().lower()
+                    pt = p_obj.port
+                    if not pt:
+                        pt = 443 if p_obj.scheme in ["vless", "trojan", "hysteria2", "hy2"] else 80
+                    sec = q.get("security", [""])[0].lower()
+                    uid = (p_obj.username or "").strip().lower()
+                    sni = q.get("sni", [""])[0].lower()
+                    path = q.get("path", [""])[0] or q.get("serviceName", [""])[0]
+                except Exception:
+                    match = re.search(r'://([^@]+)@([^:]+):(\d+)', l)
+                    if match:
+                        uid = match.group(1).lower()
+                        h = match.group(2).lower()
+                        pt = int(match.group(3))
+                        sec, sni, path, q = "", "", "", {}
+                        p_obj = None
+                    else:
+                        continue
 
-            if not h or not pt: 
-                continue
+            if not h or not pt: continue
             k = (scheme, uid, h, pt)
             if k not in cands:
-                cands[k] = (b_url, h, pt, uid, sni, path, scheme, l, q)
-        except Exception: 
-            pass
+                cands[k] = (b_url, h, pt, uid, sni, path, scheme, l, q, p_obj)
+        except Exception: pass
 
     items = list(cands.values())
-    print(f"💎 تعداد کل کاندیدها: {len(items)} | شروع تست شبکه...")
+    print(f"💎 تعداد کاندیدهای یکتا برای تست: {len(items)}")
 
     def test_pipeline(it):
-        b_url, host, port, uuid, sni, path, scheme, raw_link, q = it
-        arch, bonus = detect_arch_and_bonus(scheme, urlparse(b_url), q, raw_link)
+        b_url, host, port, uuid, sni, path, scheme, raw_link, q, p_obj = it
+        arch, bonus = detect_arch_and_bonus(scheme, p_obj, q, raw_link)
         ping, jitter = ping_node(host, port)
         if ping is not None and ping < MAX_FINAL_PING_MS:
             port_bonus = 100 if port in GOLDEN_PORTS else 0
@@ -218,8 +241,15 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
             r = f.result()
             if r: tested.append(r)
 
+    # 📊 گزارش آماری پروتکل‌های تایید شده بعد از تست پینگ
+    tested_proto_counts = {}
+    for s in tested:
+        sc = s["scheme"]
+        tested_proto_counts[sc] = tested_proto_counts.get(sc, 0) + 1
+    print(f"🎯 [آمار تاییدشده بعد از پینگ] => {tested_proto_counts}")
+
     if not tested:
-        print("❌ سروری تایید نشد.")
+        print("❌ هیچ سروری از این بسته تایید پینگ نشد.")
         return []
 
     tested.sort(key=lambda x: x["score"], reverse=True)
@@ -233,8 +263,6 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
             unique[k] = s
 
     final = [s for s in unique.values() if s["ping"] < MAX_FINAL_PING_MS]
-    print(f"🎯 {len(final)} کانفیگ تاییدشده (شامل VLESS و VMess)...")
-
     geo_data = fetch_geo_batch(list({s["host"] for s in final}))
 
     final_links = []
@@ -251,31 +279,5 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("\n".join(final_links) + "\n")
 
-    print(f"💾 فایل {output_file} ذخیره شد.")
-
-    if BOT_TOKEN and CHAT_ID:
-        time.sleep(2.0)
-        tehran_tz = timezone(timedelta(hours=3, minutes=30))
-        now = datetime.now(tehran_tz)
-        caption = f"""📦 فایل: {os.path.basename(output_file)}
-📊 تعداد: {len(final_links)} کانفیگ تاییدشده
-⏱️ پینگ واقعی: همگی < 500ms
-🕒 ساعت بروزرسانی: {now.strftime('%H:%M:%S')} (تهران)
-📅 تاریخ میلادی: {now.strftime('%Y-%m-%d')}
-
-💬 گروه: {CHAT_GROUP_LINK}
-✨ کانال: {TELEGRAM_LINK}"""
-        try:
-            with open(output_file, "rb") as doc:
-                r = requests.post(
-                    f"https://api.telegram.org/bot{BOT_TOKEN}/sendDocument",
-                    data={"chat_id": CHAT_ID, "caption": caption},
-                    files={"document": doc},
-                    timeout=45
-                )
-                if r.status_code == 200:
-                    print(f"✈️ فایل {os.path.basename(output_file)} به تلگرام ارسال شد.")
-        except Exception as e:
-            print("❌ خطا در ارسال تلگرام:", e)
-
+    print(f"💾 فایل {output_file} با {len(final_links)} نود ذخیره شد.")
     return final_links
