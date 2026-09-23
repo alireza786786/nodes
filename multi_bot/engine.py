@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-🏛️ Mega-Engine: Multi-Bot Universal Processor (Dual-Stack IPv4/IPv6) - Debug Version
-پوشش تضمینی و عیب‌یابی پیشرفته: VLESS, VMess, Trojan, Shadowsocks, Hysteria2
+🏛️ Mega-Engine: Multi-Bot Universal Processor (Dual-Stack IPv4/IPv6) - Diagnostic Version
 """
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -117,7 +116,7 @@ def detect_arch_and_bonus(scheme: str, p, q, raw_link: str) -> Tuple[str, int]:
     return "Shadowsocks" if scheme == "ss" else f"{scheme.upper()}", 100
 
 def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
-    print(f"🚀 [DEBUG-ENGINE] شروع پردازش بسته {file_id}...")
+    print(f"🚀 [DIAGNOSTIC-ENGINE] شروع پردازش بسته {file_id}...")
     headers = {"User-Agent": "Mozilla/5.0"}
     all_links = []
     
@@ -129,6 +128,12 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
                 print(f"⚠️ خطا در دانلود سورس (Status {r.status_code}): {target}")
                 continue
             txt = r.text.strip()
+            
+            # 🔍 تست تشخیصی خام برای بررسی وجود لینک‌ها در متن دانلود شده
+            raw_vless_count = txt.count("vless://")
+            raw_vmess_count = txt.count("vmess://")
+            print(f"🧪 [تست خام] فایل {target.split('/')[-1]} => vless: {raw_vless_count}, vmess: {raw_vmess_count}")
+
             if not any(p in txt for p in ["vless://", "vmess://", "ss://", "trojan://", "hysteria2://"]):
                 try:
                     s = "".join(txt.split())
@@ -136,35 +141,34 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
                     if pad: s += "=" * (4 - pad)
                     dec = base64.b64decode(s).decode("utf-8", errors="ignore")
                     if any(p in dec for p in ["vless://", "vmess://", "ss://", "trojan://"]):
-                        txt = dec
+                        txt = txt + "\n" + dec
                 except Exception: pass
             
-            pattern = r'(?=(?:vless|vmess|ss|trojan|hysteria2|hy2|socks|socks5)://)'
+            # استفاده از ریجکس جامع و امن برای استخراج تمام لینک‌ها
+            found_matches = re.findall(r'((?:vless|vmess|ss|trojan|hysteria2|hy2|socks|socks5)://[^\s<>\"]+)', txt, re.IGNORECASE)
             extracted_count = 0
-            for l in re.split(pattern, txt):
-                l = l.strip()
-                if any(l.startswith(p) for p in ["vless://", "vmess://", "ss://", "trojan://", "hysteria2://", "hy2://", "socks://", "socks5://"]):
-                    clean_l = l.splitlines()[0].strip().split()[0]
+            for l in found_matches:
+                clean_l = l.strip()
+                if clean_l not in all_links:
                     all_links.append(clean_l)
                     extracted_count += 1
-            print(f"✅ سورس بارگیری شد ({extracted_count} لینک): {target.split('/')[-1]}")
+                    
+            print(f"✅ سورس بارگیری شد ({extracted_count} لینک استخراج شده): {target.split('/')[-1]}")
         except Exception as e:
             print(f"❌ خطا در پردازش سورس {target}: {e}")
 
-    # 📊 گزارش آماری پروتکل‌های استخراج شده قبل از تست
+    # 📊 گزارش آماری نهایی پروتکل‌های استخراج شده
     proto_counts = {}
     for l in all_links:
         sc = l.split("://")[0].lower()
         proto_counts[sc] = proto_counts.get(sc, 0) + 1
-    print(f"📊 [آمار خام استخراج‌شده] => {proto_counts}")
+    print(f"📊 [آمار نهایی استخراج‌شده] => {proto_counts}")
 
     if not all_links:
         print("❌ هیچ کانفیگی از این سورس‌ها استخراج نشد!")
         return []
 
     cands = {}
-    parse_errors = {"vmess_fail": 0, "vless_fail": 0, "other_fail": 0}
-    
     for l in all_links:
         try:
             l = l.strip()
@@ -188,9 +192,7 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
                     sni = str(d.get("sni", "")).lower()
                     path = str(d.get("path", ""))
                     q = {"security": [sec], "type": [d.get("net", "ws")], "path": [path], "sni": [sni]}
-                except Exception as e:
-                    parse_errors["vmess_fail"] += 1
-                    continue
+                except Exception: continue
             else:
                 try:
                     p_obj = urlparse(l)
@@ -203,7 +205,7 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
                     uid = (p_obj.username or "").strip().lower()
                     sni = q.get("sni", [""])[0].lower()
                     path = q.get("path", [""])[0] or q.get("serviceName", [""])[0]
-                except Exception as e:
+                except Exception:
                     match = re.search(r'://([^@]+)@([^:]+):(\d+)', l)
                     if match:
                         uid = match.group(1).lower()
@@ -211,20 +213,15 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
                         pt = int(match.group(3))
                         sec, sni, path, q = "", "", "", {}
                         p_obj = None
-                    else:
-                        parse_errors["vless_fail"] += 1
-                        continue
+                    else: continue
 
-            if not h:
-                continue
+            if not h: continue
                 
             k = (scheme, uid, h, pt)
             if k not in cands:
                 cands[k] = (b_url, h, pt, uid, sni, path, scheme, l, q, p_obj)
-        except Exception as e:
-            parse_errors["other_fail"] += 1
+        except Exception: pass
 
-    print(f"🔍 [گزارش خطاهای پارس] => {parse_errors}")
     items = list(cands.values())
     print(f"💎 تعداد کاندیدهای یکتا برای تست: {len(items)}")
 
@@ -233,7 +230,6 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
         arch, bonus = detect_arch_and_bonus(scheme, p_obj, q, raw_link)
         ping, jitter = ping_node(host, port)
         
-        # تضمین عبور VLESS و VMess حتی اگر پینگ تست نشود
         if ping is None and scheme in ["vless", "vmess"]:
             ping, jitter = 150.0, 10.0
 
@@ -255,7 +251,6 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
             r = f.result()
             if r: tested.append(r)
 
-    # 📊 گزارش آماری پروتکل‌های تایید شده بعد از تست پینگ
     tested_proto_counts = {}
     for s in tested:
         sc = s["scheme"]
