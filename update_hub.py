@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-📊 اسکریپت خودکار به‌روزرسانی جدول‌ها و دسته‌بندی کشوری
+📊 Master Hub & UI Auto-Updater (Countries & README Sync)
 """
-import os, glob
+import os
+import glob
 
-def update_readme_and_countries():
-    print("🔄 در حال به‌روزرسانی رابط کاربری و جدول‌های README...")
+def run_updater():
+    print("🔄 در حال پردازش و به‌روزرسانی رابط کاربری مخزن...")
     
-    # 1. خواندن و تفکیک نودها بر اساس کشور از فایل‌های Config
+    # 1. خواندن تمام نودهای موجود از پوشه Config
     config_files = glob.glob("Config/*.txt")
     all_nodes = []
     for cf in config_files:
@@ -16,52 +17,62 @@ def update_readme_and_countries():
             with open(cf, "r", encoding="utf-8") as f:
                 lines = [line.strip() for line in f if line.strip() and "://" in line]
                 all_nodes.extend(lines)
-        except Exception: pass
+        except Exception: 
+            pass
 
+    # حذف تکراری‌ها
+    all_nodes = list(set(all_nodes))
+    print(f"💎 کل نودهای یکتا برای دسته‌بندی کشوری: {len(all_nodes)}")
+
+    # 2. دسته‌بندی نودها بر اساس کشور
     country_data = {}
+    global_nodes = []
+
     for node in all_nodes:
-        # استخراج پرچم یا نام کشور از نام نود (بر اساس ساختار برندینگ شما)
+        global_nodes.append(node)
         if "®️" in node and "©️" in node:
             try:
                 parts = node.split("®️")[1].split("©️")
                 country_name = parts[0].strip()
-                # پیدا کردن پرچم قبل از نام کشور
                 flag_part = node.split("📡")[1].split("®️")[0] if "📡" in node else "🌐"
-                cc = country_name[:2].lower() # پیش‌فرض کوتاه
                 
                 key = (country_name, flag_part)
                 if key not in country_data:
                     country_data[key] = []
                 country_data[key].append(node)
-            except Exception: pass
+            except Exception:
+                pass
 
-    # 2. ذخیره فایل‌های کشوری در پوشه Country
+    # 3. ایجاد پوشه Country و فایل‌های متنی هر کشور
     country_dir = "Country"
     os.makedirs(country_dir, exist_ok=True)
     
     table_rows = ""
-    for (c_name, flag), nodes in country_data.items():
+    # مرتب‌سازی بر اساس بیشترین تعداد نود
+    sorted_countries = sorted(country_data.items(), key=lambda x: len(x[1]), reverse=True)
+
+    for (c_name, flag), nodes in sorted_countries:
         count = len(nodes)
-        cc_code = c_name.lower().replace(" ", "_")
+        cc_code = "".join([c for c in c_name if c.isalnum()]).lower() or "xx"
         file_name = f"{cc_code}.txt"
         file_path = os.path.join(country_dir, file_name)
         
         with open(file_path, "w", encoding="utf-8") as f:
             f.write("\n".join(nodes) + "\n")
             
-        sub_link = f"./Country/{file_name}"
+        sub_link = f"./{file_name}"
         table_rows += f"| {flag} {c_name} | {count} | [سابسکرایب]({sub_link}) |\n"
 
     if not table_rows:
         table_rows = "| 🌐 Global | 0 | - |\n"
 
-    # 3. به‌روزرسانی فایل README.md در پوشه Country
+    # 4. آپدیت خودکار فایل README.md داخل پوشه Country
     country_readme_path = os.path.join(country_dir, "README.md")
-    readme_content = f"""<div align="center">
+    country_readme_content = f"""<div align="center">
 
 # 🌍 مرکز سرورهای کشوری (Countries Hub)
 
-تفکیک زنده بر اساس کشور، تعداد نودهای فعال و کدهای QR
+تفکیک زنده بر اساس کشور، تعداد نودهای فعال و سابسکریپشن‌های اختصاصی
 
 </div>
 
@@ -71,12 +82,12 @@ def update_readme_and_countries():
 | :--- | :---: | :---: |
 {table_rows}
 ---
-> آخرین بروزرسانی خودکار با سیستم هوشمند
+> 🔄 آخرین بروزرسانی خودکار هوشمند گیت‌هاب اکشن
 """
     with open(country_readme_path, "w", encoding="utf-8") as f:
-        f.write(readme_content)
+        f.write(country_readme_content)
 
-    print("✅ جدول‌ها و فایل‌های کشوری با موفقیت به‌روزرسانی شدند.")
+    print(f"✅ تفکیک کشوری انجام شد. تعداد {len(sorted_countries)} کشور شناسایی و ذخیره شد.")
 
 if __name__ == "__main__":
-    update_readme_and_countries()
+    run_updater()
