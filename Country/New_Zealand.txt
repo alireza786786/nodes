@@ -1,3 +1,3 @@
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@114.129.43.30:8880/?type=ws&encryption=none&flow=&host=vms.lifetime04.workers.dev&path=%2F#👉🆔@Goodbaye_filtering📡🇳🇿®️New Zealand©️Auckland🅿️ping:1.5ms⚡️VLESS-TLS
-vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@114.129.43.168:8880/?type=ws&encryption=none&host=kjgx.laoyoutiao.link&path=Telegram%40WangCai2%2F%3Fed%3D2560#👉🆔@Goodbaye_filtering📡🇳🇿®️New Zealand©️Auckland🅿️ping:2.3ms⚡️VLESS-TLS
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@114.129.43.30:8880?security=none&type=ws&path=/&host=vms.lifetime04.workers.dev&packetEncoding=xudp#👉🆔@Goodbaye_filtering📡🇳🇿®️New Zealand©️Auckland🅿️ping:2.2ms⚡️VLESS-TLS
+vless://0132166f-e702-48ed-a9e7-b07af768faf8@114.129.43.251:8880/?type=ws&encryption=none&host=cf.d3z.net&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560#👉🆔@Goodbaye_filtering📡🇳🇿®️New Zealand©️Auckland🅿️ping:6.4ms⚡️VLESS-TLS
+vless://3b940e86-7b0d-40da-acf1-12d334e41023@151.101.164.11:80/?type=ws&encryption=none&flow=&host=Fastapi.Org&path=%2F&ed=2560&eh=Sec-WebSocket-Protocol#👉🆔@Goodbaye_filtering📡🇳🇿®️New Zealand©️Auckland🅿️ping:172.9ms⚡️VLESS-TLS
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@114.129.43.30:8880?security=none&type=ws&path=/&host=vms.lifetime04.workers.dev&packetEncoding=xudp#👉🆔@Goodbaye_filtering📡🇳🇿®️New Zealand©️Auckland🅿️ping:12.8ms⚡️VLESS-TLS

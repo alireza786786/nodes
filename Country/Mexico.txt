@@ -1,2 +1,1 @@
-vless://8bba3194-4856-46d1-8319-075817d87eb1@193.39.208.215:443?security=reality&flow=xtls-rprx-vision&sni=nl11.cyphervpn.pro&type=tcp&fp=firefox&pbk=oGgupP3uX0TNyFwuxNYaFj-IQ8EPhCuKfJdaOHiMnV0&sid=c334408a1056aaf8#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Mexico City🅿️ping:91.4ms⚡️Reality-Vision
-vless://c18b978e-1c4e-415c-8bea-07942b563a64@216.238.79.164:443?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Querétaro City🅿️ping:55.6ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@216.238.79.164:443?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Querétaro City🅿️ping:47.0ms⚡️VLESS-TLS
