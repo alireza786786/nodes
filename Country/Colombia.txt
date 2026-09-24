@@ -1,0 +1,2 @@
+vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@157.137.219.244:62145?security=none&type=tcp&packetEncoding=xudp#👉🆔@Goodbaye_filtering📡🇨🇴®️Colombia©️Bogotá🅿️ping:82.0ms⚡️VLESS-TLS
+vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@157.137.219.244:62145?security=none&type=tcp#👉🆔@Goodbaye_filtering📡🇨🇴®️Colombia©️Bogotá🅿️ping:76.1ms⚡️VLESS-TLS

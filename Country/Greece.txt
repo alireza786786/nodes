@@ -1,0 +1,2 @@
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@38.54.29.210:2053?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇬🇷®️Greece©️Athens🅿️ping:127.2ms⚡️VLESS-TLS
+vless://b940be1b-3998-45d2-bf7b-06e7b6c4987a@38.54.29.210:2053?security=tls&sni=kkkk-xcd.pages.dev&type=ws&headerType=none&host=kkkk-xcd.pages.dev&path=%2F%3Fed%3D2048&fp=chrome#👉🆔@Goodbaye_filtering📡🇬🇷®️Greece©️Athens🅿️ping:129.3ms⚡️VLESS-TLS

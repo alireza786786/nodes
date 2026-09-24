@@ -1,0 +1,10 @@
+vless://6e35e494-c95d-4c40-9787-f21698ad5360@188.211.233.228:443?&security=reality&flow=xtls-rprx-vision&pbk=QQZQVGy8uV4JSgPJ6a8jA56bptsSifntKDJjhSvOl2I&sid=197e9c7abe&fp=firefox&sni=musicboss.eu&type=tcp&headerType=none&host=musicboss.eu&path=%2F#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:104.6ms⚡️Reality-Vision
+vless://20595050-84c7-40e6-b9e3-cf90c99f8a4c@85.159.229.122:443?fp=chrome&host=fin4.wba-pn.ru&path=%2F&security=tls&sni=fin4.wba-pn.ru&type=ws#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:96.5ms⚡️VLESS-TLS
+vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@50.7.5.166:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=ir-new.failspace.top&type=tcp#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:80.1ms⚡️VLESS-TLS
+vless://3b940e86-7b0d-40da-acf1-12d334e41023@199.232.24.11:80/?type=ws&encryption=none&flow=&host=Fastapi.Org&path=%2F&ed=2560&eh=Sec-WebSocket-Protocol#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:96.6ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@198.55.102.68:2083?encryption=none&fp=chrome&host=shuma.ccwu.cc&path=%2F&security=tls&sni=shuma.ccwu.cc&type=ws#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:85.6ms⚡️VLESS-TLS
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6bkV0amdITFhINEZCTGlj@74.234.59.81:443#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:71.5ms⚡️CF-CleanIP
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@107.150.20.112:8443?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:86.0ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@198.55.102.68:2083?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:85.5ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@167.160.177.68:2096?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:90.0ms⚡️VLESS-TLS
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@84.247.48.78:1080#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:70.9ms⚡️CF-CleanIP
