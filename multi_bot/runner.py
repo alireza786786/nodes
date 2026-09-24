@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 🏛️ Master Multi-Bot Orchestrator & Ultimate Dynamic Hub + Telegram Sender
-تولید خودکار جداول، فایل‌های سابسکریپشن و ارسال مستقیم بسته‌ها به کانال تلگرام
+تولید خودکار جداول، فایل‌های سابسکریپشن و ارسال مستقیم بسته‌ها به کانال تلگرام با پنل گرافیکی
 """
 
 import os
@@ -239,13 +239,19 @@ def main():
             with open(out_b64, "w", encoding="utf-8") as bf:
                 bf.write(b64_str)
 
-            # 📮 ارسال فایل سابسکریپشن بسته به کانال تلگرام
+            # 📮 متن گرافیکی و شیک برای ارسال به کانال تلگرام
             sub_url = f"{REPO_RAW_BASE}/Subscription/plain/{key}.txt"
             caption = (
-                f"🔥 <b>بسته سابسکریپشن اختصاصی #{key.upper()}</b>\n\n"
-                f"📡 تعداد نودهای زنده و تایید شده: <b>{len(valid_nodes)}</b>\n"
-                f"📄 <a href='{sub_url}'>لینک مستقیم سابسکریپشن</a>\n\n"
-                f"📢 کانال رسمی: <a href='{CHANNEL_LINK}'>Goodbaye_filtering</a>"
+                f"╔═══════════════════════╗\n"
+                f"  🛡️ <b>بسته سابسکریپشن اختصاصی #{key.upper()}</b>\n"
+                f"╚═══════════════════════╝\n\n"
+                f"⚡ <b>وضعیت اتصال:</b> تست شده و فوق‌العاده پرسرعت\n"
+                f"📡 <b>تعداد نودهای زنده:</b> <code>{len(valid_nodes)}</code> سرور\n\n"
+                f"🔗 <b>لینک مستقیم فایل سابسکریپشن:</b>\n"
+                f"👉 <a href='{sub_url}'>کلیک برای دریافت فایل خام</a>\n\n"
+                f"━━━━━━━━━━━━━━━━━━━━━━━\n"
+                f"📢 <b>کانال رسمی:</b> <a href='{CHANNEL_LINK}'>@Goodbaye_filtering</a>\n"
+                f"💬 <b>گروه تبادل:</b> <a href='{CHAT_GROUP_LINK}'>@CONFIG_V2RAY_VIP</a>"
             )
             send_to_telegram(out_plain, caption)
 
