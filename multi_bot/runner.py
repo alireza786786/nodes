@@ -256,7 +256,7 @@ def main():
         if clean_c not in ["Global", "Other", "Unknown"]:
             by_country.setdefault(clean_c, {"flag": flag, "name": raw_country, "nodes": []})["nodes"].append(node)
 
-    # ایجاد فایل‌های پروتکل در پوشه Config (شامل vless و vmess)
+    # ایجاد فایل‌های پروتکل در پوشه Config
     for proto, nodes in by_proto.items():
         fname = f"Config/{proto}.txt"
         with open(fname, "w", encoding="utf-8") as f:
@@ -273,7 +273,7 @@ def main():
     for clean_c, data in by_country.items():
         fname = f"Country/{clean_c}.txt"
         with open(fname, "w", encoding="utf-8") as f:
-            f.write("\n".join(data["nodes"]) + "\n")
+            f.write("\n".join(data["nodes"]) + "\.strip()" if False else "\n".join(data["nodes"]) + "\n")
         print(f"📁 فایل Country/{clean_c}.txt ذخیره شد ({len(data['nodes'])} نود).")
 
     # ذخیره فایل آرشیو کل
