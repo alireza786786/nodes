@@ -1,8 +1,10 @@
-socks://Og%3D%3D@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:247.6ms⚡️CF-CleanIP
-socks://dGVzdDEyMzp0ZXN0MTIz@104.168.249.36:1080#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Seattle🅿️ping:76.2ms⚡️CF-CleanIP
-socks://VDJjOVBUcFBaejA5OlQyYzlQVHBQWnowOQ==@103.210.161.8:1080#👉🆔@Goodbaye_filtering📡🇨🇳®️China©️Guangzhou🅿️ping:186.3ms⚡️CF-CleanIP
-socks://dGVzdDEyMzp0ZXN0MTIz@185.145.99.41:1080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:135.4ms⚡️CF-CleanIP
-socks://Og==@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:248.3ms⚡️CF-CleanIP
-socks://Og==@135.125.232.151:1080#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:148.3ms⚡️CF-CleanIP
-socks://Og@185.87.255.47:1080#👉🆔@Goodbaye_filtering📡🇬🇧®️United Kingdom©️London🅿️ping:141.2ms⚡️CF-CleanIP
-socks://MTIzOjEyMw@8.217.182.75:3060#👉🆔@Goodbaye_filtering📡🇭🇰®️Hong Kong©️Hong Kong🅿️ping:188.6ms⚡️CF-CleanIP
+socks://Ok5vbmU%3D@144.91.111.48:1088#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:191.3ms⚡️CF-CleanIP
+socks://Og%3D%3D@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:251.1ms⚡️CF-CleanIP
+socks://dGVzdDEyMzp0ZXN0MTIz@104.168.249.36:1080#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Seattle🅿️ping:51.0ms⚡️CF-CleanIP
+socks://VDJjOVBUcFBaejA5OlQyYzlQVHBQWnowOQ==@103.210.161.8:1080#👉🆔@Goodbaye_filtering📡🇨🇳®️China©️Guangzhou🅿️ping:176.6ms⚡️CF-CleanIP
+socks://VDJjbE0wUWxNMFE2Og==@121.169.46.116:1090#👉🆔@Goodbaye_filtering📡🇰🇷®️South Korea©️Suwon🅿️ping:154.4ms⚡️CF-CleanIP
+socks://dGVzdDEyMzp0ZXN0MTIz@185.145.99.41:1080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:118.2ms⚡️CF-CleanIP
+socks://Og==@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:243.0ms⚡️CF-CleanIP
+socks://Og@185.87.255.47:1080#👉🆔@Goodbaye_filtering📡🇬🇧®️United Kingdom©️London🅿️ping:150.8ms⚡️CF-CleanIP
+socks://Og==@109.123.251.109:1080#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:175.5ms⚡️CF-CleanIP
+socks://S0g2SlN3OG86VjJSYXl5Tkd2cG4tVjJSYXl5Tkd2cG4@168.222.43.35:8443#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:120.2ms⚡️CF-CleanIP
