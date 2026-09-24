@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-📊 Advanced Hub Synchronizer: Real Ping Tiering & Complete Country Mapping
+📊 Ultimate Hub & UI Synchronizer (Fixed URL-Encoding & Robust Country Parser)
 """
 import os
 import glob
+import urllib.parse
+import base64
 
 # نگاشت جامع کدهای بین‌المللی و نام کشورها با پرچم
 COUNTRY_MAP = {
@@ -20,17 +22,26 @@ COUNTRY_MAP = {
     "ru": ("روسیه", "🇷🇺"),
     "ae": ("امارات", "🇦🇪"),
     "sg": ("سنگاپور", "🇸🇬"),
-    "fr": ("فرانسه", "🇫🇷"),
     "se": ("سوئد", "🇸🇪"),
     "ch": ("سوئیس", "🇨🇭"),
     "jp": ("ژاپن", "🇯🇵"),
 }
 
+def decode_node_safely(node_str):
+    """رمزگشایی ایمن متن نود که ممکن است URL-encoded یا Base64 باشد"""
+    try:
+        # دیکد کردن کدهای هگزادسیمال و URL-encoded (حل مشکل ایموجی‌ها مثل %F0%9F...)
+        decoded = urllib.parse.unquote(node_str)
+        return decoded
+    except Exception:
+        return node_str
+
 def parse_ping(node_str):
     """استخراج مقدار پینگ از داخل نام یا ساختار نود"""
     try:
-        if "ping:" in node_str.lower():
-            parts = node_str.lower().split("ping:")
+        lower_str = node_str.lower()
+        if "ping:" in lower_str:
+            parts = lower_str.split("ping:")
             num_str = "".join([c for c in parts[1].split("ms")[0] if c.isdigit()])
             if num_str:
                 return int(num_str)
@@ -39,27 +50,31 @@ def parse_ping(node_str):
     return 999  # پیش‌فرض برای نودهایی که پینگ ندارند
 
 def run_updater():
-    print("🔄 در حال پردازش کامل و تفکیک هوشمند نودها...")
+    print("🔄 در حال پردازش پیشرفته و پاک‌سازی نودها...")
     
     config_files = glob.glob("Config/*.txt")
     all_nodes = []
     for cf in config_files:
         try:
             with open(cf, "r", encoding="utf-8") as f:
-                lines = [line.strip() for line in f if line.strip() and "://" in line]
-                all_nodes.extend(lines)
+                for line in f:
+                    clean_line = line.strip()
+                    if clean_line and "://" in clean_line:
+                        all_nodes.append(clean_line)
         except Exception: 
             pass
 
     all_nodes = list(set(all_nodes))
-    print(f"💎 کل نودهای یکتا: {len(all_nodes)}")
+    print(f"💎 کل نودهای یکتا جهت پردازش: {len(all_nodes)}")
 
     tier_ultra_fast = [] # زیر ۲۰۰ میلی‌ثانیه
     tier_good = []       # زیر ۵۰۰ میلی‌ثانیه
     country_data = {}
 
     for node in all_nodes:
-        ping_val = parse_ping(node)
+        # اعمال دیکد ایمن برای خواندن کاراکترهای URL-encoded شده
+        readable_node = decode_node_safely(node)
+        ping_val = parse_ping(readable_node)
         
         # لایه‌بندی پینگ واقعی
         if ping_val <= 200:
@@ -67,43 +82,28 @@ def run_updater():
         if ping_val <= 500:
             tier_good.append(node)
 
-        # تفکیک دقیق کشوری (پشتیبانی از ساختار برندینگ و کدهای استاندارد)
+        # تفکیک دقیق کشوری با پشتیبانی از متن‌های دیکد شده
         assigned = False
-        node_lower = node.lower()
+        node_lower = readable_node.lower()
         
-        # ۱. بررسی از روی ساختار برندینگ شما (مثل ®️آلمان©️)
-        if "®️" in node and "©️" in node:
-            try:
-                parts = node.split("®️")[1].split("©️")
-                c_name = parts[0].strip()
-                flag_part = node.split("📡")[1].split("®️")[0] if "📡" in node else "🌐"
-                key = (c_name, flag_part)
+        # ۱. بررسی بر اساس نام کشورها یا کدهای استاندارد داخل متن خوانا
+        for code, (c_name, flag) in COUNTRY_MAP.items():
+            if f"[{code}]" in node_lower or f"_{code}_" in node_lower or c_name in node_lower:
+                key = (c_name, flag)
                 if key not in country_data:
                     country_data[key] = []
                 country_data[key].append(node)
                 assigned = True
-            except Exception:
-                pass
+                break
 
-        # ۲. بررسی از روی کدهای دو حرفی یا نام کشورها در متن
-        if not assigned:
-            for code, (c_name, flag) in COUNTRY_MAP.items():
-                if f"[{code}]" in node_lower or f"_{code}_" in node_lower or c_name in node_lower:
-                    key = (c_name, flag)
-                    if key not in country_data:
-                        country_data[key] = []
-                    country_data[key].append(node)
-                    assigned = True
-                    break
-
-        # ۳. اگر هیچ‌کدام نبود، ثبت در بخش سایر سرورها (Global)
+        # ۲. اگر کشوری صراحتاً پیدا نشد، بررسی در سایر بخش‌ها یا ثبت به عنوان Global
         if not assigned:
             key = ("سایر سرورها (Global)", "🌐")
             if key not in country_data:
                 country_data[key] = []
             country_data[key].append(node)
 
-    # ذخیره فایل‌های لایه‌بندی پینگ
+    # ذخیره فایل‌های لایه‌بندی پینگ در پوشه Subscription
     os.makedirs("Subscription", exist_ok=True)
     with open("Subscription/ultra_fast.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(tier_ultra_fast) + "\n")
@@ -151,7 +151,7 @@ def run_updater():
     with open(country_readme_path, "w", encoding="utf-8") as f:
         f.write(country_readme_content)
 
-    print(f"✅ تفکیک کشوری کامل با {len(sorted_countries)} دسته و لایه‌بندی پینگ با موفقیت انجام شد.")
+    print(f"✅ تفکیک کامل کشوری با {len(sorted_countries)} دسته و لایه‌بندی پینگ با موفقیت انجام شد.")
 
 if __name__ == "__main__":
     run_updater()
