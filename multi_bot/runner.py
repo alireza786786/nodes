@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-🏛️ Master Multi-Bot Orchestrator & Ultimate Dynamic Hub
-تولید خودکار تمام جداول کشوری و پروتکلی با ستون نودهای زنده (Nodes) و کدهای QR
+🏛️ Master Multi-Bot Orchestrator & Ultimate Dynamic Hub + Telegram Sender
+تولید خودکار جداول، فایل‌های سابسکریپشن و ارسال مستقیم بسته‌ها به کانال تلگرام
 """
 
 import os
@@ -10,6 +10,7 @@ import sys
 import json
 import re
 import base64
+import requests
 from datetime import datetime, timezone, timedelta
 
 sys.path.append(os.path.abspath("."))
@@ -64,8 +65,27 @@ def extract_transport(line: str) -> str:
     if "type=tcp" in lower or "reality-vision" in lower: return "tcp"
     return "other"
 
+def send_to_telegram(file_path: str, caption: str):
+    token = os.environ.get("BOT_TOKEN", "").strip()
+    chat_id = os.environ.get("CHAT_ID", "").strip()
+    if not token or not chat_id:
+        print("⚠️ توکن بات یا چت آیدی تلگرام در Secrets گیت‌هاب تنظیم نشده است!")
+        return
+    
+    url = f"https://api.telegram.org/bot{token}/sendDocument"
+    try:
+        with open(file_path, "rb") as f:
+            files = {"document": f}
+            data = {"chat_id": chat_id, "caption": caption, "parse_mode": "HTML"}
+            r = requests.post(url, data=data, files=files, timeout=30)
+            if r.status_code == 200:
+                print(f"✅ فایل {file_path} با موفقیت به کانال تلگرام ارسال شد.")
+            else:
+                print(f"❌ خطا در ارسال به تلگرام: {r.text}")
+    except Exception as e:
+        print(f"❌ خطا در ارسال فایل به تلگرام: {e}")
+
 def generate_hub_readmes(by_country, by_proto, total_nodes, date_str, time_str):
-    # ساخت جدول کشورها با ستون تعداد نود و بارکد QR
     sorted_countries = sorted(by_country.items(), key=lambda x: len(x[1]["nodes"]), reverse=True)
     country_rows = []
     for clean_name, data in sorted_countries:
@@ -79,7 +99,6 @@ def generate_hub_readmes(by_country, by_proto, total_nodes, date_str, time_str):
 
     country_table_md = "\n".join(country_rows) if country_rows else "| 🌐 Global | **0** | - | - |"
 
-    # ساخت جدول پروتکل‌ها با ستون تعداد نود و بارکد QR
     proto_rows = []
     for proto, nodes in by_proto.items():
         count = len(nodes)
@@ -92,7 +111,6 @@ def generate_hub_readmes(by_country, by_proto, total_nodes, date_str, time_str):
     all_txt_url = f"{REPO_RAW_BASE}/all.txt"
     all_qr_url = f"https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={all_txt_url}"
 
-    # ۱. بازنویسی فایل Country/README.md
     country_readme_content = f"""# 🌍 مرکز سرورهای کشوری (Countries Hub)
 ### تفکیک زنده بر اساس کشور، تعداد نودهای فعال و کدهای QR
 
@@ -107,7 +125,6 @@ def generate_hub_readmes(by_country, by_proto, total_nodes, date_str, time_str):
     with open("Country/README.md", "w", encoding="utf-8") as f:
         f.write(country_readme_content)
 
-    # ۲. بازنویسی فایل Config/README.md
     config_readme_content = f"""# 📁 مرکز پروتکل‌های اختصاصی (Protocols Hub)
 ### تفکیک زنده بر اساس نوع پروتکل، تعداد نودها و کدهای QR
 
@@ -122,7 +139,6 @@ def generate_hub_readmes(by_country, by_proto, total_nodes, date_str, time_str):
     with open("Config/README.md", "w", encoding="utf-8") as f:
         f.write(config_readme_content)
 
-    # ۳. بازنویسی صفحه اصلی مخزن README.md
     root_readme_content = f"""<div align="center">
 
 # 🛡️ NODES MASTER REPOSITORY
@@ -223,6 +239,16 @@ def main():
             with open(out_b64, "w", encoding="utf-8") as bf:
                 bf.write(b64_str)
 
+            # 📮 ارسال فایل سابسکریپشن بسته به کانال تلگرام
+            sub_url = f"{REPO_RAW_BASE}/Subscription/plain/{key}.txt"
+            caption = (
+                f"🔥 <b>بسته سابسکریپشن اختصاصی #{key.upper()}</b>\n\n"
+                f"📡 تعداد نودهای زنده و تایید شده: <b>{len(valid_nodes)}</b>\n"
+                f"📄 <a href='{sub_url}'>لینک مستقیم سابسکریپشن</a>\n\n"
+                f"📢 کانال رسمی: <a href='{CHANNEL_LINK}'>Goodbaye_filtering</a>"
+            )
+            send_to_telegram(out_plain, caption)
+
             for line in valid_nodes:
                 base = line.split("#")[0]
                 if base not in seen_bases:
@@ -256,27 +282,23 @@ def main():
         if clean_c not in ["Global", "Other", "Unknown"]:
             by_country.setdefault(clean_c, {"flag": flag, "name": raw_country, "nodes": []})["nodes"].append(node)
 
-    # ایجاد فایل‌های پروتکل در پوشه Config
     for proto, nodes in by_proto.items():
         fname = f"Config/{proto}.txt"
         with open(fname, "w", encoding="utf-8") as f:
             f.write("\n".join(nodes) + "\n")
         print(f"📁 فایل Config/{proto}.txt ذخیره شد ({len(nodes)} نود).")
 
-    # ایجاد فایل‌های شبکه در پوشه transports
     for trans, nodes in by_trans.items():
         fname = f"transports/{trans}.txt"
         with open(fname, "w", encoding="utf-8") as f:
             f.write("\n".join(nodes) + "\n")
 
-    # ایجاد فایل‌های تفکیک‌شده کشوری در پوشه Country
     for clean_c, data in by_country.items():
         fname = f"Country/{clean_c}.txt"
         with open(fname, "w", encoding="utf-8") as f:
-            f.write("\n".join(data["nodes"]) + "\.strip()" if False else "\n".join(data["nodes"]) + "\n")
+            f.write("\n".join(data["nodes"]) + "\n")
         print(f"📁 فایل Country/{clean_c}.txt ذخیره شد ({len(data['nodes'])} نود).")
 
-    # ذخیره فایل آرشیو کل
     with open("all.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(all_plain_configs) + "\n")
 
@@ -284,7 +306,6 @@ def main():
     with open("all_b64.txt", "w", encoding="utf-8") as f:
         f.write(b64_all)
 
-    # بازنویسی خودکار جداول زنده همراه با QR Code در ۳ بخش مخزن
     generate_hub_readmes(by_country, by_proto, total_unique, date_str, time_str)
     print("✅ تمام جداول زنده با نودها و کدهای QR در README اصلی و پوشه‌ها ساخته شدند.")
 
