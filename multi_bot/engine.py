@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-🏛️ Mega-Engine: Multi-Bot Universal Processor (Dual-Stack IPv4/IPv6) - Diagnostic Version
+🏛️ Mega-Engine: Multi-Bot Universal Processor (Dual-Stack IPv4/IPv6) - Fixed Version
 """
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone, timedelta
-from urllib.parse import urlparse, parse_qs, quote
+from urllib.parse import urlparse, parse_qs
 from typing import List, Optional, Tuple
 import base64, json, os, re, socket, ssl, time, ipaddress
 import requests
@@ -38,17 +38,20 @@ def get_flag_emoji(c: str) -> str:
     return "".join(chr(127397 + ord(x.upper())) for x in c) if c and len(c) == 2 else "🌐"
 
 def rename_node(raw_link: str, scheme: str, new_name: str) -> str:
+    """اصلاح‌شده: جلوگیری از کدگذاری URL برای حفظ خوانایی ایموجی‌ها و پرچم‌ها"""
     if scheme == "vmess":
         try:
             body = raw_link[len("vmess://"):].split("#", 1)[0]
+            body = body.replace("-", "+").replace("_", "/")
             pad = "=" * (-len(body) % 4)
             data = json.loads(base64.b64decode(body + pad).decode("utf-8", errors="ignore"))
             data["ps"] = new_name
             new_body = base64.b64encode(json.dumps(data, ensure_ascii=False).encode("utf-8")).decode("utf-8")
             return f"vmess://{new_body}"
         except Exception: return raw_link
+    
     base = raw_link.split("#", 1)[0]
-    return f"{base}#{quote(new_name)}"
+    return f"{base}#{new_name}"
 
 def fetch_geo_batch(ip_list: List[str]) -> dict:
     geo = {}
@@ -70,6 +73,7 @@ def fetch_geo_batch(ip_list: List[str]) -> dict:
     return geo
 
 def ping_node(host: str, port: int) -> Tuple[Optional[float], Optional[float]]:
+    """اصلاح‌شده: حذف پینگ‌ها و جیترهای ساختگی؛ رد کردن قطعی نودهای ناسالم"""
     t0 = time.time()
     try:
         with socket.create_connection((host, int(port)), timeout=TIMEOUT):
@@ -83,7 +87,7 @@ def ping_node(host: str, port: int) -> Tuple[Optional[float], Optional[float]]:
         with socket.create_connection((host, int(port)), timeout=TIMEOUT):
             pass
         p2 = (time.time() - t1) * 1000
-    except Exception: return round(p1, 2), 10.0
+    except Exception: return None, None  # اصلاح شد: دیگر مقدار فیک برنمی‌گرداند
 
     jitter = abs(p2 - p1)
     avg_ping = round((p1 + p2) / 2, 2)
@@ -116,7 +120,7 @@ def detect_arch_and_bonus(scheme: str, p, q, raw_link: str) -> Tuple[str, int]:
     return "Shadowsocks" if scheme == "ss" else f"{scheme.upper()}", 100
 
 def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
-    print(f"🚀 [DIAGNOSTIC-ENGINE] شروع پردازش بسته {file_id}...")
+    print(f"🚀 [FIXED-ENGINE] شروع پردازش بسته {file_id}...")
     headers = {"User-Agent": "Mozilla/5.0"}
     all_links = []
     
@@ -125,18 +129,13 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
         try:
             r = requests.get(target, headers=headers, timeout=14)
             if r.status_code != 200: 
-                print(f"⚠️ خطا در دانلود سورس (Status {r.status_code}): {target}")
                 continue
             txt = r.text.strip()
             
-            # 🔍 تست تشخیصی خام برای بررسی وجود لینک‌ها در متن دانلود شده
-            raw_vless_count = txt.count("vless://")
-            raw_vmess_count = txt.count("vmess://")
-            print(f"🧪 [تست خام] فایل {target.split('/')[-1]} => vless: {raw_vless_count}, vmess: {raw_vmess_count}")
-
+            # دیکد هوشمند با پشتیبانی از URL-safe
             if not any(p in txt for p in ["vless://", "vmess://", "ss://", "trojan://", "hysteria2://"]):
                 try:
-                    s = "".join(txt.split())
+                    s = "".join(txt.split()).replace("-", "+").replace("_", "/")
                     pad = len(s) % 4
                     if pad: s += "=" * (4 - pad)
                     dec = base64.b64decode(s).decode("utf-8", errors="ignore")
@@ -144,25 +143,12 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
                         txt = txt + "\n" + dec
                 except Exception: pass
             
-            # استفاده از ریجکس جامع و امن برای استخراج تمام لینک‌ها
             found_matches = re.findall(r'((?:vless|vmess|ss|trojan|hysteria2|hy2|socks|socks5)://[^\s<>\"]+)', txt, re.IGNORECASE)
-            extracted_count = 0
             for l in found_matches:
                 clean_l = l.strip()
                 if clean_l not in all_links:
                     all_links.append(clean_l)
-                    extracted_count += 1
-                    
-            print(f"✅ سورس بارگیری شد ({extracted_count} لینک استخراج شده): {target.split('/')[-1]}")
-        except Exception as e:
-            print(f"❌ خطا در پردازش سورس {target}: {e}")
-
-    # 📊 گزارش آماری نهایی پروتکل‌های استخراج شده
-    proto_counts = {}
-    for l in all_links:
-        sc = l.split("://")[0].lower()
-        proto_counts[sc] = proto_counts.get(sc, 0) + 1
-    print(f"📊 [آمار نهایی استخراج‌شده] => {proto_counts}")
+        except Exception: pass
 
     if not all_links:
         print("❌ هیچ کانفیگی از این سورس‌ها استخراج نشد!")
@@ -180,6 +166,7 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
 
             if scheme == "vmess":
                 body = l[len("vmess://"):].split("#", 1)[0]
+                body = body.replace("-", "+").replace("_", "/")
                 pad = "=" * (-len(body) % 4)
                 try:
                     d = json.loads(base64.b64decode(body + pad).decode("utf-8", errors="ignore"))
@@ -223,16 +210,13 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
         except Exception: pass
 
     items = list(cands.values())
-    print(f"💎 تعداد کاندیدهای یکتا برای تست: {len(items)}")
 
     def test_pipeline(it):
         b_url, host, port, uuid, sni, path, scheme, raw_link, q, p_obj = it
         arch, bonus = detect_arch_and_bonus(scheme, p_obj, q, raw_link)
         ping, jitter = ping_node(host, port)
         
-        if ping is None and scheme in ["vless", "vmess"]:
-            ping, jitter = 150.0, 10.0
-
+        # اصلاح شد: حذف تزریق پینگ فیک (150ms) برای نودهای معیوب
         if ping is not None and ping < MAX_FINAL_PING_MS:
             port_bonus = 100 if port in GOLDEN_PORTS else 0
             power_score = (1000 / ping) - (jitter * 1.5) + bonus + port_bonus
@@ -250,12 +234,6 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
         for f in as_completed(futs):
             r = f.result()
             if r: tested.append(r)
-
-    tested_proto_counts = {}
-    for s in tested:
-        sc = s["scheme"]
-        tested_proto_counts[sc] = tested_proto_counts.get(sc, 0) + 1
-    print(f"🎯 [آمار تاییدشده بعد از پینگ] => {tested_proto_counts}")
 
     if not tested:
         print("❌ هیچ سروری از این بسته تایید پینگ نشد.")
@@ -277,6 +255,7 @@ def run_engine_core(file_id: str, sources: Tuple[str, ...], output_file: str):
     final_links = []
     for node in final:
         info = geo_data.get(node["host"], {"country": "Unknown", "city": "Unknown", "flag": "🌐"})
+        # نام‌گذاری کاملاً خوانا برای خوانده شدن توسط اسکریپت تفکیک کشوری
         new_name = (
             f"👉🆔@{CHANNEL_TAG}📡{info['flag']}®️{info['country']}©️{info['city']}"
             f"🅿️ping:{node['ping']:.1f}ms⚡️{node['arch']}"
