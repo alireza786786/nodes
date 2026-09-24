@@ -1,10 +1,18 @@
-socks://Ok5vbmU%3D@144.91.111.48:1088#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:191.3ms⚡️CF-CleanIP
-socks://Og%3D%3D@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:251.1ms⚡️CF-CleanIP
-socks://dGVzdDEyMzp0ZXN0MTIz@104.168.249.36:1080#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Seattle🅿️ping:51.0ms⚡️CF-CleanIP
-socks://VDJjOVBUcFBaejA5OlQyYzlQVHBQWnowOQ==@103.210.161.8:1080#👉🆔@Goodbaye_filtering📡🇨🇳®️China©️Guangzhou🅿️ping:176.6ms⚡️CF-CleanIP
-socks://VDJjbE0wUWxNMFE2Og==@121.169.46.116:1090#👉🆔@Goodbaye_filtering📡🇰🇷®️South Korea©️Suwon🅿️ping:154.4ms⚡️CF-CleanIP
-socks://dGVzdDEyMzp0ZXN0MTIz@185.145.99.41:1080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:118.2ms⚡️CF-CleanIP
-socks://Og==@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:243.0ms⚡️CF-CleanIP
-socks://Og@185.87.255.47:1080#👉🆔@Goodbaye_filtering📡🇬🇧®️United Kingdom©️London🅿️ping:150.8ms⚡️CF-CleanIP
-socks://Og==@109.123.251.109:1080#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:175.5ms⚡️CF-CleanIP
-socks://S0g2SlN3OG86VjJSYXl5Tkd2cG4tVjJSYXl5Tkd2cG4@168.222.43.35:8443#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:120.2ms⚡️CF-CleanIP
+socks://S0g2SlN3OG86VjJSYXl5Tkd2cG4tVjJSYXl5Tkd2cG4%3D@168.222.43.35:8443#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:92.0ms⚡️CF-CleanIP
+socks://Og%3D%3D@161.35.90.93:1083#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:88.2ms⚡️CF-CleanIP
+socks://Og%3D%3D@101.36.104.239:10808#👉🆔@Goodbaye_filtering📡🇯🇵®️Japan©️Tokyo🅿️ping:162.6ms⚡️CF-CleanIP
+socks://VDJjOVBUcFBaejA5OlQyYzlQVHBQWnowOQ%3D%3D@103.210.161.8:1080#👉🆔@Goodbaye_filtering📡🇨🇳®️China©️Guangzhou🅿️ping:200.4ms⚡️CF-CleanIP
+socks://Og%3D%3D@83.147.216.208:1080#👉🆔@Goodbaye_filtering📡🇫🇮®️Finland©️Helsinki🅿️ping:115.7ms⚡️CF-CleanIP
+socks://Og%3D%3D@171.25.158.95:1080#👉🆔@Goodbaye_filtering📡🇸🇪®️Sweden©️Vaxjo🅿️ping:154.9ms⚡️CF-CleanIP
+socks://Og%3D%3D@123.58.219.171:10808#👉🆔@Goodbaye_filtering📡🇭🇰®️Hong Kong©️Hong Kong🅿️ping:199.8ms⚡️CF-CleanIP
+socks://Og%3D%3D@109.123.251.109:1080#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:99.3ms⚡️CF-CleanIP
+socks://Og%3D%3D@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:203.8ms⚡️CF-CleanIP
+socks://Og%3D%3D@193.25.215.182:22222#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Los Angeles🅿️ping:95.6ms⚡️CF-CleanIP
+socks://Og%3D%3D@144.91.121.61:1088#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:179.3ms⚡️CF-CleanIP
+socks://dGVzdDEyMzp0ZXN0MTIz@104.168.249.36:1080#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Seattle🅿️ping:67.5ms⚡️CF-CleanIP
+socks://dGVzdDEyMzp0ZXN0MTIz@185.145.99.41:1080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:86.9ms⚡️CF-CleanIP
+socks://VDJjOVBUcFBaejA5OlQyYzlQVHBQWnowOQ==@103.210.161.8:1080#👉🆔@Goodbaye_filtering📡🇨🇳®️China©️Guangzhou🅿️ping:198.8ms⚡️CF-CleanIP
+socks://Og==@160.22.17.4:9988#👉🆔@Goodbaye_filtering📡🇻🇳®️Vietnam©️Quận Ba🅿️ping:254.2ms⚡️CF-CleanIP
+socks://Og==@109.123.251.109:1080#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:92.7ms⚡️CF-CleanIP
+socks://Og==@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:207.4ms⚡️CF-CleanIP
+socks://193.233.223.47:1080#👉🆔@Goodbaye_filtering📡🇷🇺®️Russia©️St Petersburg🅿️ping:115.7ms⚡️CF-CleanIP
