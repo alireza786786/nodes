@@ -1,1 +1,2 @@
-vless://d342d11e-d424-4583-b36e-524ab1f0afa4@45.202.247.152:443?allowInsecure=1&sni=cdn8848.776676.xyz&type=ws&host=cdn8848.776676.xyz&path=/jump.html/star?ed=2560fp=chrome&security=tls#👉🆔@Goodbaye_filtering📡🇲🇴®️Macao©️Macao🅿️ping:198.6ms⚡️VLESS-TLS
+vless://3db635e4-f9ec-42d6-8aba-e23df8b0e6da@45.202.246.91:8443?security=tls&type=ws&path=%2FTG%3A%40MiaChatChannel&host=mia4.pages.dev&packetEncoding=none&sni=mia4.pages.dev&fp=chrome&encryption=none#👉🆔@Goodbaye_filtering📡🇲🇴®️Macao©️Macao🅿️ping:152.4ms⚡️VLESS-TLS
+vless://d342d11e-d424-4583-b36e-524ab1f0afa4@45.202.247.152:443?allowInsecure=1&sni=cdn8848.776676.xyz&type=ws&host=cdn8848.776676.xyz&path=/jump.html/star?ed=2560fp=chrome&security=tls#👉🆔@Goodbaye_filtering📡🇲🇴®️Macao©️Macao🅿️ping:152.1ms⚡️VLESS-TLS
