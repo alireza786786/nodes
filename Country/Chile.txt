@@ -1,1 +1,2 @@
-vless://3b940e86-7b0d-40da-acf1-12d334e41023@151.101.220.11:80/?type=ws&encryption=none&flow=&host=Fastapi.Org&path=%2F&ed=2560&eh=Sec-WebSocket-Protocol#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:118.0ms⚡️VLESS-TLS
+vless://3b940e86-7b0d-40da-acf1-12d334e41023@151.101.220.11:80/?type=ws&encryption=none&flow=&host=Fastapi.Org&path=%2F&ed=2560&eh=Sec-WebSocket-Protocol#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:128.8ms⚡️VLESS-TLS
+ss://YWVzLTI1Ni1nY206eEJTdEJFVnF2R3dIUG9jYw@64.176.2.21:8388#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:123.4ms⚡️CF-CleanIP

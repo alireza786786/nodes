@@ -1,2 +1,1 @@
-vless://adf1fac3-cf57-ff40-574c-cf514457eb3f@83.143.106.4:443?mode=auto&path=/&security=reality&encryption=none&pbk=4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo&fp=chrome&type=xhttp&sni=res.cdn.office.net#👉🆔@Goodbaye_filtering📡🇮🇱®️Israel©️Jerusalem🅿️ping:92.8ms⚡️XHTTP-Elite
-vless://8584983e-e4ac-4fd9-96b9-7f4db8dc5790@195.211.24.49:443?type=tcp&encryption=none&security=none#👉🆔@Goodbaye_filtering📡🇮🇱®️Israel©️Petah Tikva🅿️ping:128.8ms⚡️VLESS-TLS
+vless://adf1fac3-cf57-ff40-574c-cf514457eb3f@83.143.106.4:443?mode=auto&path=/&security=reality&encryption=none&pbk=4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo&fp=chrome&type=xhttp&sni=res.cdn.office.net#👉🆔@Goodbaye_filtering📡🇮🇱®️Israel©️Jerusalem🅿️ping:107.2ms⚡️XHTTP-Elite
