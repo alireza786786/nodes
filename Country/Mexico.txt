@@ -1,2 +1,2 @@
-vless://a6d20e79-d326-42c1-bc20-f4cecc6dc42d@45.134.9.133:8443?encryption=none&security=tls&sni=ul-mexico1.09vpn.com&allowInsecure=true&type=ws&path=/vless/&packetEncoding=xudp#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Mexico City🅿️ping:46.5ms⚡️VLESS-TLS
-vless://c18b978e-1c4e-415c-8bea-07942b563a64@216.238.79.164:443?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Querétaro City🅿️ping:44.8ms⚡️VLESS-TLS
+vless://a6d20e79-d326-42c1-bc20-f4cecc6dc42d@45.134.9.133:8443?encryption=none&security=tls&sni=ul-mexico1.09vpn.com&allowInsecure=true&type=ws&path=/vless/&packetEncoding=xudp#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Mexico City🅿️ping:68.4ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@216.238.79.164:443?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Querétaro City🅿️ping:53.9ms⚡️VLESS-TLS
