@@ -1,6 +1,6 @@
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphZHVCOUhHeFFIakEyU0JNUmprSFg2@102.37.156.224:443#👉🆔@Goodbaye_filtering📡🇿🇦®️South Africa©️Johannesburg🅿️ping:255.6ms⚡️CF-CleanIP
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0ZkFjUmlrYXdoTm9aQWh1@139.84.247.164:8388#👉🆔@Goodbaye_filtering📡🇿🇦®️South Africa©️Isando🅿️ping:254.6ms⚡️CF-CleanIP
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYc3k4T3g0eU9WM3hMbHB4dGp6czNY@102.133.165.160:16233#👉🆔@Goodbaye_filtering📡🇿🇦®️South Africa©️Johannesburg🅿️ping:255.4ms⚡️CF-CleanIP
-vless://06e4425e-a8cb-4b63-929f-2105604ab0a9@160.123.255.159:443/?type=ws&encryption=none&host=dse.bgm2024.us.kg&security=tls&sni=dse.bgm2024.us.kg#👉🆔@Goodbaye_filtering📡🇿🇦®️South Africa©️Cape Town🅿️ping:9.1ms⚡️VLESS-TLS
-vless://3e4d70e5-7ec9-48f9-a4e0-48c44c6063fd@102.129.165.81:48905?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=XIubADu7punjUa2oUfHj2vTmUzUJXN_xDrGsmf_LslY&sni=gaming.radeon.com#👉🆔@Goodbaye_filtering📡🇿🇦®️South Africa©️Johannesburg🅿️ping:261.2ms⚡️Reality-Vision
-vless://93e69143-c1db-446f-a07c-c49642924fdc@140.248.170.223:443/?type=ws&encryption=none&host=bia-daily-configs.com&path=%2F%40Daily_Configs%2C%40Daily_Configs%2C%40Daily_Configs&security=tls&sni=bia-daily-configs.com&alpn=h3%2Ch2&fp=random#👉🆔@Goodbaye_filtering📡🇿🇦®️South Africa©️Johannesburg🅿️ping:254.6ms⚡️VLESS-TLS
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphZHVCOUhHeFFIakEyU0JNUmprSFg2@102.37.156.224:443#👉🆔@Goodbaye_filtering📡🇿🇦®️South Africa©️Johannesburg🅿️ping:270.1ms⚡️CF-CleanIP
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0ZkFjUmlrYXdoTm9aQWh1@139.84.247.164:8388#👉🆔@Goodbaye_filtering📡🇿🇦®️South Africa©️Isando🅿️ping:269.4ms⚡️CF-CleanIP
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYc3k4T3g0eU9WM3hMbHB4dGp6czNY@102.133.165.160:16233#👉🆔@Goodbaye_filtering📡🇿🇦®️South Africa©️Johannesburg🅿️ping:274.2ms⚡️CF-CleanIP
+vless://3b940e86-7b0d-40da-acf1-12d334e41023@151.101.172.11:80/?type=ws&encryption=none&flow=&host=Fastapi.Org&path=%2F&ed=2560&eh=Sec-WebSocket-Protocol#👉🆔@Goodbaye_filtering📡🇿🇦®️South Africa©️Johannesburg🅿️ping:1.4ms⚡️VLESS-TLS
+vless://55520747-311e-4015-83ce-be46e2060ce3@160.123.255.85:443/?type=ws&encryption=none&host=uxb.vs2024.us.kg&path=%2F%3Fed%3D2560&security=tls&sni=uxb.vs2024.us.kg#👉🆔@Goodbaye_filtering📡🇿🇦®️South Africa©️Cape Town🅿️ping:1.9ms⚡️VLESS-TLS
+vless://36af4874-d6a3-4f7c-82a7-1cb724961b52@156.38.157.171:2053?fp=chrome&host=linek.perry.us.kg&path=/out&security=tls&sni=linek.perry.us.kg&type=ws#👉🆔@Goodbaye_filtering📡🇿🇦®️South Africa©️Johannesburg🅿️ping:302.6ms⚡️VLESS-TLS
