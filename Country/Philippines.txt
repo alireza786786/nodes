@@ -1,1 +1,1 @@
-vless://d6ff02be-7772-4a4e-b0a5-40ef180e58c4@61.245.10.8:443?encryption=none&security=tls&sni=thus-k.netnode.cc.cd&fp=chrome&type=ws&host=thus-k.netnode.cc.cd&path=%2Ft.me%2Fdaily_free_vpn#👉🆔@Goodbaye_filtering📡🇵🇭®️Philippines©️Manila🅿️ping:210.7ms⚡️VLESS-TLS
+vless://0dc1fc26-b8e9-4296-9870-0996de3c2333@61.245.11.164:443?security=reality&encryption=none&pbk=19h48_R3YFHGEKiWsZi0kHgum4AJgyPsuJuui7K8q3A&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=ph-1.kihsuyhf8jkiugsxb.cfd#👉🆔@Goodbaye_filtering📡🇵🇭®️Philippines©️Manila🅿️ping:207.3ms⚡️Reality-Vision

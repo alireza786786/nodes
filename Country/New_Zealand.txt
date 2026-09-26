@@ -1,1 +1,1 @@
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@114.129.43.30:8880?security=none&type=ws&path=/&host=vms.lifetime04.workers.dev&packetEncoding=xudp#👉🆔@Goodbaye_filtering📡🇳🇿®️New Zealand©️Auckland🅿️ping:2.6ms⚡️VLESS-TLS
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@114.129.43.30:8880?security=none&type=ws&path=/&host=vms.lifetime04.workers.dev&packetEncoding=xudp#👉🆔@Goodbaye_filtering📡🇳🇿®️New Zealand©️Auckland🅿️ping:4.6ms⚡️VLESS-TLS

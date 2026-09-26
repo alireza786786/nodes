@@ -1,2 +1,2 @@
-vless://c18b978e-1c4e-415c-8bea-07942b563a64@46.8.194.76:8443?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇺🇿®️Uzbekistan©️Tashkent🅿️ping:170.2ms⚡️VLESS-TLS
-vless://c18b978e-1c4e-415c-8bea-07942b563a64@46.8.194.76:2053?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇺🇿®️Uzbekistan©️Tashkent🅿️ping:175.0ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@46.8.194.76:2053?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇺🇿®️Uzbekistan©️Tashkent🅿️ping:169.6ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@46.8.194.76:8443?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇺🇿®️Uzbekistan©️Tashkent🅿️ping:177.2ms⚡️VLESS-TLS
