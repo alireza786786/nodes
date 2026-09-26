@@ -1,3 +1,1 @@
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@114.129.43.30:8880?security=none&type=ws&path=%2F&host=vms.lifetime04.workers.dev&packetEncoding=xudp#👉🆔@Goodbaye_filtering📡🇳🇿®️New Zealand©️Auckland🅿️ping:5.6ms⚡️VLESS-TLS
-vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@114.129.43.168:8880/?type=ws&encryption=none&host=kjgx.laoyoutiao.link&path=Telegram%40WangCai2%2F%3Fed%3D2560#👉🆔@Goodbaye_filtering📡🇳🇿®️New Zealand©️Auckland🅿️ping:5.6ms⚡️VLESS-TLS
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@114.129.43.30:8880?security=none&type=ws&path=/&host=vms.lifetime04.workers.dev&packetEncoding=xudp#👉🆔@Goodbaye_filtering📡🇳🇿®️New Zealand©️Auckland🅿️ping:4.8ms⚡️VLESS-TLS
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@114.129.43.30:8880?security=none&type=ws&path=/&host=vms.lifetime04.workers.dev&packetEncoding=xudp#👉🆔@Goodbaye_filtering📡🇳🇿®️New Zealand©️Auckland🅿️ping:18.1ms⚡️VLESS-TLS

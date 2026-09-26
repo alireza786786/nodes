@@ -1,4 +1,10 @@
-vless://c18b978e-1c4e-415c-8bea-07942b563a64@107.150.20.112:8443?fp=chrome&host=shuma.ccwu.cc&path=%2F&security=tls&sni=shuma.ccwu.cc&type=ws#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:139.5ms⚡️VLESS-TLS
-vless://20595050-84c7-40e6-b9e3-cf90c99f8a4c@85.159.229.122:443?fp=chrome&host=fin4.wba-pn.ru&path=%2F&security=tls&sni=fin4.wba-pn.ru&type=ws#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:148.9ms⚡️VLESS-TLS
-vless://c18b978e-1c4e-415c-8bea-07942b563a64@198.55.102.68:2083?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:147.8ms⚡️VLESS-TLS
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@84.247.48.78:1080#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:128.0ms⚡️CF-CleanIP
+vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@50.7.5.187:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=ireland-new-ded1.failspace.top&type=tcp#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:117.2ms⚡️VLESS-TLS
+vless://3b940e86-7b0d-40da-acf1-12d334e41023@199.232.24.11:80/?type=ws&encryption=none&flow=&host=Fastapi.Org&path=%2F&ed=2560&eh=Sec-WebSocket-Protocol#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:123.0ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@198.55.102.68:2083?fp=chrome&host=shuma.ccwu.cc&path=%2F&security=tls&sni=shuma.ccwu.cc&type=ws#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:122.5ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@107.150.20.112:8443?fp=chrome&host=shuma.ccwu.cc&path=%2F&security=tls&sni=shuma.ccwu.cc&type=ws#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:124.7ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@167.160.177.68:2096?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:120.7ms⚡️VLESS-TLS
+vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@50.7.5.187:443?type=tcp&security=tls&flow=xtls-rprx-vision&fp=chrome&sni=ireland-new-ded1.failspace.top#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:121.3ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@198.55.102.68:2083?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:126.9ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@107.150.20.112:8443?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:135.8ms⚡️VLESS-TLS
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@84.247.48.78:1080#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:103.6ms⚡️CF-CleanIP
+vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@50.7.5.187:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=ireland-new-ded1.failspace.top&type=tcp&fp=firefox#👉🆔@Goodbaye_filtering📡🇮🇪®️Ireland©️Dublin🅿️ping:115.6ms⚡️VLESS-TLS
