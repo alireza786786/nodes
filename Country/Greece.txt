@@ -1,1 +1,2 @@
-vless://c18b978e-1c4e-415c-8bea-07942b563a64@38.54.29.210:2053?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇬🇷®️Greece©️Athens🅿️ping:144.9ms⚡️VLESS-TLS
+vless://8f704ed6-9a1a-4d04-94dd-1bff501716de@85.90.197.220:443?security=reality&type=raw&packetEncoding=xudp&sni=www.cloudflare.com&fp=chrome&flow=xtls-rprx-vision&sid=94acb54627612d43&pbk=biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4&encryption=none#👉🆔@Goodbaye_filtering📡🇬🇷®️Greece©️Thessaloniki🅿️ping:180.6ms⚡️Reality-Vision
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@38.54.29.210:2053?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇬🇷®️Greece©️Athens🅿️ping:186.7ms⚡️VLESS-TLS
