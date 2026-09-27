@@ -1,2 +1,2 @@
-ss://YWVzLTI1Ni1nY206eEJTdEJFVnF2R3dIUG9jYw@64.176.2.21:8388#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:135.6ms⚡️CF-CleanIP
-vless://04c808e2-0b59-47b0-a54b-32fc7ef1c902@64.176.15.110:2053?&security=tls&fp=random&sni=free.cndyw.ggff.net&type=ws&headerType=none&host=free.cndyw.ggff.net&path=pyip%3Dbpb.yousef.isegaro.com#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:137.6ms⚡️VLESS-TLS
+vless://3b940e86-7b0d-40da-acf1-12d334e41023@151.101.220.11:80/?type=ws&encryption=none&flow=&host=Fastapi.Org&path=%2F&ed=2560&eh=Sec-WebSocket-Protocol#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:145.3ms⚡️VLESS-TLS
+vless://04c808e2-0b59-47b0-a54b-32fc7ef1c902@64.176.15.110:2053?&security=tls&fp=random&sni=free.cndyw.ggff.net&type=ws&headerType=none&host=free.cndyw.ggff.net&path=pyip%3Dbpb.yousef.isegaro.com#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:139.5ms⚡️VLESS-TLS
