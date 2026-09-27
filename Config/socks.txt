@@ -1,9 +1,10 @@
-socks://Og%3D%3D@144.91.111.48:1088#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:167.4ms⚡️CF-CleanIP
-socks://Og%3D%3D@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:201.8ms⚡️CF-CleanIP
-socks://Og%3D%3D@144.91.121.61:1088#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:168.1ms⚡️CF-CleanIP
-socks://dGVzdDEyMzp0ZXN0MTIz@104.168.249.36:1080#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Seattle🅿️ping:64.3ms⚡️CF-CleanIP
-socks://dGVzdDEyMzp0ZXN0MTIz@185.145.99.41:1080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:89.5ms⚡️CF-CleanIP
-socks://Og==@103.210.161.8:1080#👉🆔@Goodbaye_filtering📡🇨🇳®️China©️Guangzhou🅿️ping:201.0ms⚡️CF-CleanIP
-socks://VDJjbE0wUWxNMFE2Og==@121.169.46.116:1090#👉🆔@Goodbaye_filtering📡🇰🇷®️South Korea©️Suwon🅿️ping:178.4ms⚡️CF-CleanIP
-socks://Og==@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:205.2ms⚡️CF-CleanIP
-socks://Og==@160.22.17.4:9988#👉🆔@Goodbaye_filtering📡🇻🇳®️Vietnam©️Quận Ba🅿️ping:236.1ms⚡️CF-CleanIP
+socks://VkRKamJFMHdVV3hOTUZFMk9nOlZESmpiRTB3VVd4Tk1GRTJPZw%3D%3D@121.169.46.116:1090#👉🆔@Goodbaye_filtering📡🇰🇷®️South Korea©️Suwon🅿️ping:127.3ms⚡️CF-CleanIP
+socks://Og%3D%3D@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:226.5ms⚡️CF-CleanIP
+socks://Og%3D%3D@144.91.121.61:1088#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:253.5ms⚡️CF-CleanIP
+socks://dGVzdDEyMzp0ZXN0MTIz@104.168.249.36:1080#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Seattle🅿️ping:18.5ms⚡️CF-CleanIP
+socks://Og==@103.210.161.8:1080#👉🆔@Goodbaye_filtering📡🇨🇳®️China©️Guangzhou🅿️ping:149.0ms⚡️CF-CleanIP
+socks://Og==@160.22.17.4:9988#👉🆔@Goodbaye_filtering📡🇻🇳®️Vietnam©️Quận Ba🅿️ping:202.9ms⚡️CF-CleanIP
+socks://Og==@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:228.1ms⚡️CF-CleanIP
+socks://dGVzdDEyMzp0ZXN0MTIz@185.145.99.41:1080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:144.7ms⚡️CF-CleanIP
+socks://Og==@109.123.251.109:1080#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:161.6ms⚡️CF-CleanIP
+socks://MTIzOjEyMw@8.217.182.75:3060#👉🆔@Goodbaye_filtering📡🇭🇰®️Hong Kong©️Hong Kong🅿️ping:150.7ms⚡️CF-CleanIP

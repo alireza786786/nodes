@@ -1,4 +1,5 @@
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@156.243.83.30:8880?security=none&type=ws&host=vms.lifetime54.workers.dev&path=/#👉🆔@Goodbaye_filtering📡🇵🇹®️Portugal©️Lisbon🅿️ping:2.0ms⚡️VLESS-TLS
-vless://34c01e61-f4f3-4afb-a83b-406caf8caa33@156.243.83.254:8880/?type=ws&encryption=none&host=yg.bantony199.top&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3#👉🆔@Goodbaye_filtering📡🇵🇹®️Portugal©️Lisbon🅿️ping:2.2ms⚡️VLESS-TLS
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@156.243.83.30:8880?security=none&type=ws&path=/&host=vms.lifetime54.workers.dev&packetEncoding=xudp#👉🆔@Goodbaye_filtering📡🇵🇹®️Portugal©️Lisbon🅿️ping:2.7ms⚡️VLESS-TLS
-vless://c18b978e-1c4e-415c-8bea-07942b563a64@195.133.92.20:443?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇵🇹®️Portugal©️Porto🅿️ping:97.0ms⚡️VLESS-TLS
+vless://34c01e61-f4f3-4afb-a83b-406caf8caa33@156.243.83.254:8880/?type=ws&encryption=none&host=yg.bantony199.top&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3#👉🆔@Goodbaye_filtering📡🇵🇹®️Portugal©️Lisbon🅿️ping:1.8ms⚡️VLESS-TLS
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@156.243.83.30:8880?security=none&type=ws&host=vms.lifetime54.workers.dev&path=/#👉🆔@Goodbaye_filtering📡🇵🇹®️Portugal©️Lisbon🅿️ping:1.8ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@195.133.92.20:443?fp=chrome&host=shuma.ccwu.cc&path=%2F&security=tls&sni=shuma.ccwu.cc&type=ws#👉🆔@Goodbaye_filtering📡🇵🇹®️Portugal©️Porto🅿️ping:157.8ms⚡️VLESS-TLS
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@156.243.83.30:8880?security=none&type=ws&path=/&host=vms.lifetime54.workers.dev&packetEncoding=xudp#👉🆔@Goodbaye_filtering📡🇵🇹®️Portugal©️Lisbon🅿️ping:1.8ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@195.133.92.20:443?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇵🇹®️Portugal©️Porto🅿️ping:158.1ms⚡️VLESS-TLS

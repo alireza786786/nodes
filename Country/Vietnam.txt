@@ -1,3 +1,3 @@
-vless://d6ff02be-7772-4a4e-b0a5-40ef180e58c4@160.22.74.117:443?encryption=none&security=tls&sni=thus-k.netnode.cc.cd&fp=chrome&type=ws&host=thus-k.netnode.cc.cd&path=%2Ft.me%2Fdaily_free_vpn#👉🆔@Goodbaye_filtering📡🇻🇳®️Vietnam©️Ho Chi Minh City🅿️ping:257.7ms⚡️VLESS-TLS
-vless://c92e12ca-ea66-4785-8675-652b35134117@160.187.1.101:443?security=tls&type=ws&path=/t.me/daily_free_vpn&host=thus-k.netnode.cc.cd&packetEncoding=xudp&sni=thus-k.netnode.cc.cd&fp=chrome&encryption=none#👉🆔@Goodbaye_filtering📡🇻🇳®️Vietnam©️Tây Hồ🅿️ping:238.2ms⚡️VLESS-TLS
-socks://Og==@160.22.17.4:9988#👉🆔@Goodbaye_filtering📡🇻🇳®️Vietnam©️Quận Ba🅿️ping:236.1ms⚡️CF-CleanIP
+vless://c92e12ca-ea66-4785-8675-652b35134117@160.187.1.101:443?encryption=none&security=tls&sni=thus-k.netnode.cc.cd&fp=chrome&type=ws&host=thus-k.netnode.cc.cd&path=/t.me/daily_free_vpn#👉🆔@Goodbaye_filtering📡🇻🇳®️Vietnam©️Tây Hồ🅿️ping:205.9ms⚡️VLESS-TLS
+vless://c92e12ca-ea66-4785-8675-652b35134117@160.187.1.101:443?security=tls&type=ws&path=/t.me/daily_free_vpn&host=thus-k.netnode.cc.cd&packetEncoding=xudp&sni=thus-k.netnode.cc.cd&fp=chrome&encryption=none#👉🆔@Goodbaye_filtering📡🇻🇳®️Vietnam©️Tây Hồ🅿️ping:205.6ms⚡️VLESS-TLS
+socks://Og==@160.22.17.4:9988#👉🆔@Goodbaye_filtering📡🇻🇳®️Vietnam©️Quận Ba🅿️ping:202.9ms⚡️CF-CleanIP

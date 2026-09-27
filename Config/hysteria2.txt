@@ -1,71 +1,81 @@
-hysteria2://RN_3f80eeb4bbd0f13f@192.255.128.123:443?insecure=1&sni=192.255.128.123#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Dallas🅿️ping:61.9ms⚡️Hysteria2
-hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@45.192.12.93:443?sni=admin.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🇵🇱®️Poland©️Warsaw🅿️ping:101.3ms⚡️Hysteria2
-hysteria2://gf1%3Agfhysteria2024@5.129.235.85:443?insecure=1&sni=www.linux.com#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:88.6ms⚡️Hysteria2
-hysteria2://mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj@64.188.98.171:443?insecure=1&sni=germany3.h2corp.local#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:96.3ms⚡️Hysteria2
-hysteria2://865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01@217.60.33.215:443?insecure=1&sni=streambox.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🇵🇱®️Poland©️Warsaw🅿️ping:100.6ms⚡️Hysteria2
-hysteria2://RQBXe4kpsRant_2u1PzdneBOPuCSwUSI@43.167.208.94:443?insecure=1&sni=43.167.208.94#👉🆔@Goodbaye_filtering📡🇯🇵®️Japan©️Tokyo🅿️ping:158.1ms⚡️Hysteria2
-hysteria2://mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj@91.196.32.163:443?insecure=1&sni=germany3.h2corp.local#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:97.0ms⚡️Hysteria2
-hysteria2://my_super_password_123@open.w2m.ink:443?sni=127.0.0.1#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:163.6ms⚡️Hysteria2
-hysteria2://5413edfb-08d6-4fba-b51c-809c04feb127@77.110.104.238:443?sni=ch2-hy2.veilvpn.life#👉🆔@Goodbaye_filtering📡🇷🇺®️Russia©️Moscow🅿️ping:131.6ms⚡️Hysteria2
-hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@hy2.aspidnet.xyz:443?obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3&sni=127.0.0.1#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:123.1ms⚡️Hysteria2
-hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@130.49.161.70:443?insecure=1&obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3&sni=hy2.aspidnet.xyz#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Dronten🅿️ping:91.7ms⚡️Hysteria2
-hysteria2://QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s@162.249.125.133:443?obfs=salamander&obfs-password=c1b4086fea89914496c7e10967a419216566&sni=hy2-new.aspidnet.xyz#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:116.9ms⚡️Hysteria2
-hysteria2://gf1%3Agfhysteria2024@185.156.44.99:443?insecure=1&sni=css.rbxcdn.com#👉🆔@Goodbaye_filtering📡🇷🇴®️Romania©️Bucharest🅿️ping:119.5ms⚡️Hysteria2
-hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@144.31.49.47:443?insecure=1&sni=admin.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🇷🇺®️Russia©️Moscow🅿️ping:126.3ms⚡️Hysteria2
-hysteria2://gf1%3Agfhysteria2024@66.94.121.46:443?insecure=1&sni=www.broadcom.com#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Seattle🅿️ping:88.8ms⚡️Hysteria2
-hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@go.wwwinternetvideo.click:443?insecure=1&sni=admin.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:231.7ms⚡️Hysteria2
-hysteria2://3b8c82ed-fe66-472d-915e-034ccb57103f@labs.frkn.org:443?insecure=1&sni=127.0.0.1#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:257.0ms⚡️Hysteria2
-hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@admin.wwwinternetvideo.click:443?sni=admin.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:217.1ms⚡️Hysteria2
-hysteria2://QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s@hy2-new.aspidnet.xyz:443?insecure=1&obfs=salamander&obfs-password=c1b4086fea89914496c7e10967a419216566&sni=hy2-new.aspidnet.xyz#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:132.6ms⚡️Hysteria2
-hysteria2://gf1%3Agfhysteria2024@173.212.201.85:443?insecure=1&sni=www.docker.com#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:138.1ms⚡️Hysteria2
-hysteria2://2561c6b1a3069d3170b4d7e1ecc08c65@paris.nerabotaet.com:443?sni=127.0.0.1#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:141.9ms⚡️Hysteria2
-hysteria2://dongtaiwang.com@62.210.124.146:22000?insecure=1&sni=www.microsoft.com#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Paris🅿️ping:92.2ms⚡️Hysteria2
-hysteria2://865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01@streambox.wwwinternetvideo.click:443?insecure=1&sni=127.0.0.1#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:211.9ms⚡️Hysteria2
-hysteria2://mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj@de.1.23.h2corp.org:443?insecure=1&sni=germany3.h2corp.local#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:253.4ms⚡️Hysteria2
-hy2://RN_3f80eeb4bbd0f13f@192.255.128.123:443?insecure=1&sni=www.bing.com#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Dallas🅿️ping:61.8ms⚡️Hysteria2
-hy2://gf1%3Agfhysteria2024@5.129.235.85:443?insecure=1#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:87.9ms⚡️Hysteria2
-hy2://gf1%3Agfhysteria2024@173.212.201.85:443?insecure=1&sni=www.docker.com#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:89.9ms⚡️Hysteria2
-hy2://mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj@64.188.98.171:443?insecure=1&sni=germany3.h2corp.local#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:97.1ms⚡️Hysteria2
-hy2://RQBXe4kpsRant_2u1PzdneBOPuCSwUSI@43.167.208.94:443?insecure=1&sni=43.167.208.94#👉🆔@Goodbaye_filtering📡🇯🇵®️Japan©️Tokyo🅿️ping:159.5ms⚡️Hysteria2
-hy2://my_super_password_123@open.2ml.bid:443?sni=open.2ml.bid#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:157.2ms⚡️Hysteria2
-hy2://my_super_password_123@open.w2m.ink:443?insecure=1#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:164.6ms⚡️Hysteria2
-hy2://2561c6b1a3069d3170b4d7e1ecc08c65@paris.nerabotaet.com:443?#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:98.8ms⚡️Hysteria2
-hy2://gf1%3Agfhysteria2024@185.156.44.99:443?insecure=1#👉🆔@Goodbaye_filtering📡🇷🇴®️Romania©️Bucharest🅿️ping:119.4ms⚡️Hysteria2
-hy2://mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj@de.1.23.h2corp.org:443?insecure=1&sni=germany3.h2corp.local#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:201.2ms⚡️Hysteria2
-hy2://5413edfb-08d6-4fba-b51c-809c04feb127@77.110.104.238:443?insecure=1&sni=ch2-hy2.veilvpn.life#👉🆔@Goodbaye_filtering📡🇷🇺®️Russia©️Moscow🅿️ping:131.4ms⚡️Hysteria2
-hy2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@144.31.49.47:443?insecure=1&sni=admin.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🇷🇺®️Russia©️Moscow🅿️ping:132.8ms⚡️Hysteria2
-hy2://dongtaiwang.com@62.210.124.146:22000?insecure=1&sni=www.microsoft.com#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Paris🅿️ping:91.1ms⚡️Hysteria2
-hy2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@admin.wwwinternetvideo.click:443?insecure=1&sni=admin.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:173.8ms⚡️Hysteria2
-hysteria2://suAmQS9LlInNq4Wumh-FUF4GGlpgmG_g@159.223.157.129:8443?insecure=1#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️North Bergen🅿️ping:8.0ms⚡️Hysteria2
-hysteria2://VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC@82.38.60.15:8443?insecure=1&sni=hopp-us.yyuyy.com#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️New York🅿️ping:8.4ms⚡️Hysteria2
-hysteria2://umnDU7jgFYUjpVjVM2sW9HL0rRYLJNgzVwRu2HzWEhyZKkRx@5.83.129.11:443?insecure=1&sni=germany1.h2corp.local#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:86.3ms⚡️Hysteria2
-hysteria2://V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8@144.31.221.57:443?insecure=1&sni=player.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:96.8ms⚡️Hysteria2
-hysteria2://h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT@222.167.212.81:8443?sni=hopp-legend-se.roxa.org#👉🆔@Goodbaye_filtering📡🇫🇮®️Finland©️Helsinki🅿️ping:118.5ms⚡️Hysteria2
-hysteria2://cd74c0a406664a5bc0bac098220a2468@2.27.249.79:443?sni=nl1.sferavpn.pro&obfs=salamander&obfs-password=44f1c1e2f8b99e792ceed574627a1eb0#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:93.3ms⚡️Hysteria2
-hysteria2://h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT@222.167.212.82:8443?insecure=1&sni=hopp-legend-se.roxa.org#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:121.1ms⚡️Hysteria2
-hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@go2.wwwinternetvideo.click:443?insecure=1&sni=admin.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:157.4ms⚡️Hysteria2
-hysteria2://V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8@player.wwwinternetvideo.click:443?insecure=1&sni=player.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:194.2ms⚡️Hysteria2
-hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@admin.wwwinternetvideo.click:443?insecure=1#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:192.0ms⚡️Hysteria2
-hysteria2://umnDU7jgFYUjpVjVM2sW9HL0rRYLJNgzVwRu2HzWEhyZKkRx@de.1.22.washing.help:443?insecure=1&sni=germany1.h2corp.local#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:151.6ms⚡️Hysteria2
-hysteria2://BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=@fin14qr.wwwinternetvideo.click:443?insecure=1&sni=fin14qr.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:187.3ms⚡️Hysteria2
-hysteria2://cd74c0a406664a5bc0bac098220a2468@2.27.59.206:443?sni=de1.sferavpn.pro&obfs=salamander&obfs-password=44f1c1e2f8b99e792ceed574627a1eb0#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:96.7ms⚡️Hysteria2
-hysteria2://QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s@162.249.125.133:443?sni=hy2-new.aspidnet.xyz&obfs=salamander&obfs-password=c1b4086fea89914496c7e10967a419216566#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:119.9ms⚡️Hysteria2
-hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@130.49.161.70:443?security=tls&obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3&insecure=0&sni=hy2.aspidnet.xyz#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:92.3ms⚡️Hysteria2
-hysteria2://cd74c0a406664a5bc0bac098220a2468@144.31.49.138:443?security=tls&obfs=salamander&obfs-password=44f1c1e2f8b99e792ceed574627a1eb0&insecure=0&sni=ru1.sferavpn.pro#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:123.2ms⚡️Hysteria2
-hysteria2://sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX@faq.wwwinternetvideo.click:443?insecure=1&sni=cabinet.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:234.4ms⚡️Hysteria2
-hysteria2://6aab8efdf13945829ae3699c342be406@31.76.80.69:443?security=tls&obfs=salamander&obfs-password=uw9b2qq5rx&insecure=0&sni=fiproxy1.lockdwn.com#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:110.4ms⚡️Hysteria2
-hysteria2://github.com/Alvin9999-newpac/fanqiang@62.210.7.139:60111?insecure=1&sni=bing.com#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:4.0ms⚡️Hysteria2
-hysteria2://gf1:gfhysteria2024@66.94.121.46:443?insecure=1&sni=www.broadcom.com#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Seattle🅿️ping:64.7ms⚡️Hysteria2
-hysteria2://cd74c0a406664a5bc0bac098220a2468@2.27.249.79:443?obfs=salamander&obfs-password=44f1c1e2f8b99e792ceed574627a1eb0&sni=nl1.sferavpn.pro#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:89.3ms⚡️Hysteria2
-hysteria2://gf1:gfhysteria2024@5.129.235.85:443?insecure=1&sni=www.linux.com#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:88.1ms⚡️Hysteria2
-hysteria2://cd74c0a406664a5bc0bac098220a2468@2.27.59.206:443?insecure=1&obfs=salamander&obfs-password=44f1c1e2f8b99e792ceed574627a1eb0&sni=de1.sferavpn.pro#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Falkenstein🅿️ping:95.1ms⚡️Hysteria2
-hysteria2://cd74c0a406664a5bc0bac098220a2468@ee1.sferavpn.pro:443?obfs=salamander&obfs-password=44f1c1e2f8b99e792ceed574627a1eb0&sni=ee1.sferavpn.pro#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:121.3ms⚡️Hysteria2
-hysteria2://gf1:gfhysteria2024@173.212.201.85:443?insecure=1&sni=www.docker.com#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:92.7ms⚡️Hysteria2
-hysteria2://gf1:gfhysteria2024@185.156.44.99:443?insecure=1&sni=whatsapp.com#👉🆔@Goodbaye_filtering📡🇷🇴®️Romania©️Bucharest🅿️ping:118.8ms⚡️Hysteria2
-hysteria2://HowdyHysteria2023w0W@51.15.19.206:8443?insecure=1&obfs=salamander&obfs-password=HysteriaHowdy&sni=sni-here.com#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Haarlem🅿️ping:86.7ms⚡️Hysteria2
-hysteria2://cd74c0a406664a5bc0bac098220a2468@nl1.sferavpn.pro:443?insecure=1&obfs=salamander&obfs-password=44f1c1e2f8b99e792ceed574627a1eb0&sni=nl1.sferavpn.pro#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:101.9ms⚡️Hysteria2
-hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@hy2.aspidnet.xyz:443?obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3&sni=hy2.aspidnet.xyz#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:126.2ms⚡️Hysteria2
-hysteria2://3b8c82ed-fe66-472d-915e-034ccb57103f@labs.frkn.org:443?insecure=1&sni=labs.frkn.org#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:107.5ms⚡️Hysteria2
-hysteria2://sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX@31.76.71.63:443?insecure=1&sni=cabinet.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🇷🇺®️Russia©️Moscow🅿️ping:181.0ms⚡️Hysteria2
-hysteria2://QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s@162.249.125.133:443?security=tls&amp;obfs=salamander&amp;obfs-password=c1b4086fea89914496c7e10967a419216566&amp;insecure=0&amp;sni=hy2-new.aspidnet.xyz#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:119.0ms⚡️Hysteria2
-hysteria2://0a11d3b4-682c-4bfb-afb0-820b8285cb4b@mix.pantera-radio.ru:443?sni=mix.pantera-radio.ru&fp=firefox#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:173.5ms⚡️Hysteria2
+hysteria2://gf1%3Agfhysteria2024@66.94.121.46:443?insecure=1&sni=www.broadcom.com#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Seattle🅿️ping:20.2ms⚡️Hysteria2
+hysteria2://mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj@64.188.98.171:443?insecure=1&sni=germany3.h2corp.local#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:156.2ms⚡️Hysteria2
+hysteria2://QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s@162.249.125.133:443?obfs=salamander&obfs-password=c1b4086fea89914496c7e10967a419216566&sni=hy2-new.aspidnet.xyz#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:173.2ms⚡️Hysteria2
+hysteria2://gf1%3Agfhysteria2024@185.156.44.99:443?insecure=1&sni=www.amazon.com#👉🆔@Goodbaye_filtering📡🇷🇴®️Romania©️Bucharest🅿️ping:174.5ms⚡️Hysteria2
+hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@130.49.161.70:443?insecure=1&obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3&sni=hy2.aspidnet.xyz#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Dronten🅿️ping:152.2ms⚡️Hysteria2
+hysteria2://QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s@hy2-new.aspidnet.xyz:443?insecure=1&obfs=salamander&obfs-password=c1b4086fea89914496c7e10967a419216566&sni=hy2-new.aspidnet.xyz#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:189.5ms⚡️Hysteria2
+hysteria2://mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj@91.196.32.163:443?insecure=1&sni=91.196.32.163#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:165.1ms⚡️Hysteria2
+hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@45.192.12.93:443?sni=admin.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🇵🇱®️Poland©️Warsaw🅿️ping:157.7ms⚡️Hysteria2
+hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@hy2.aspidnet.xyz:443?obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3&sni=127.0.0.1#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:188.8ms⚡️Hysteria2
+hysteria2://5413edfb-08d6-4fba-b51c-809c04feb127@77.110.104.238:443?sni=ch2-hy2.veilvpn.life#👉🆔@Goodbaye_filtering📡🇷🇺®️Russia©️Moscow🅿️ping:188.1ms⚡️Hysteria2
+hysteria2://865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01@streambox.wwwinternetvideo.click:443?insecure=1&sni=streambox.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:172.6ms⚡️Hysteria2
+hysteria2://865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01@217.60.33.215:443?insecure=1&sni=streambox.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🇵🇱®️Poland©️Warsaw🅿️ping:164.2ms⚡️Hysteria2
+hysteria2://my_super_password_123@open.w2m.ink:443?sni=127.0.0.1#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:119.5ms⚡️Hysteria2
+hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@144.31.49.47:443?insecure=1&sni=admin.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🇷🇺®️Russia©️Moscow🅿️ping:196.2ms⚡️Hysteria2
+hysteria2://gf1%3Agfhysteria2024@5.129.235.85:443?insecure=1&sni=www.linux.com#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:155.1ms⚡️Hysteria2
+hysteria2://gf1%3Agfhysteria2024@173.212.201.85:443?insecure=1&sni=www.docker.com#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:195.7ms⚡️Hysteria2
+hysteria2://https%3A%2F%2Fxship.top@starlink-ft.251313.xyz:443?insecure=1&sni=xship.top#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:61.8ms⚡️Hysteria2
+hysteria2://HowdyHysteria2023w0W@hysteria.udpgw.com:8443?insecure=1&obfs=salamander&obfs-password=HysteriaHowdy&sni=sni-here.com#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:196.0ms⚡️Hysteria2
+hysteria2://dongtaiwang.com@62.210.124.146:22000?insecure=1&sni=www.microsoft.com#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Paris🅿️ping:152.5ms⚡️Hysteria2
+hysteria2://2561c6b1a3069d3170b4d7e1ecc08c65@paris.nerabotaet.com:443?sni=127.0.0.1#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:179.0ms⚡️Hysteria2
+hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@go.wwwinternetvideo.click:443?insecure=1&sni=admin.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:244.7ms⚡️Hysteria2
+hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@admin.wwwinternetvideo.click:443?insecure=1&sni=127.0.0.1#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:278.1ms⚡️Hysteria2
+hysteria2://0a11d3b4-682c-4bfb-afb0-820b8285cb4b@covers.pantera-radio.ru:443?insecure=1&sni=covers.pantera-radio.ru#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:192.8ms⚡️Hysteria2
+hysteria2://3b8c82ed-fe66-472d-915e-034ccb57103f@labs.frkn.org:443?insecure=1&sni=labs.frkn.org#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:212.4ms⚡️Hysteria2
+hysteria2://mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj@de.1.23.h2corp.org:443?insecure=1&sni=germany3.h2corp.local#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:252.0ms⚡️Hysteria2
+hy2://RN_3f80eeb4bbd0f13f@192.255.128.123:443?insecure=1#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Dallas🅿️ping:9.3ms⚡️Hysteria2
+hy2://my_super_password_123@open.2ml.bid:443?#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:113.7ms⚡️Hysteria2
+hy2://gf1%3Agfhysteria2024@173.212.201.85:443?insecure=1&sni=www.docker.com#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:146.3ms⚡️Hysteria2
+hy2://2561c6b1a3069d3170b4d7e1ecc08c65@paris.nerabotaet.com:443?#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:159.6ms⚡️Hysteria2
+hy2://gf1%3Agfhysteria2024@185.156.44.99:443?insecure=1#👉🆔@Goodbaye_filtering📡🇷🇴®️Romania©️Bucharest🅿️ping:174.5ms⚡️Hysteria2
+hy2://5413edfb-08d6-4fba-b51c-809c04feb127@77.110.104.238:443?insecure=1&sni=ch2-hy2.veilvpn.life#👉🆔@Goodbaye_filtering📡🇷🇺®️Russia©️Moscow🅿️ping:191.3ms⚡️Hysteria2
+hy2://mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj@64.188.98.171:443?insecure=1&sni=germany3.h2corp.local#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:158.5ms⚡️Hysteria2
+hy2://gf1%3Agfhysteria2024@5.129.235.85:443?insecure=1#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:148.5ms⚡️Hysteria2
+hy2://my_super_password_123@open.w2m.ink:443?#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:141.3ms⚡️Hysteria2
+hy2://RQBXe4kpsRant_2u1PzdneBOPuCSwUSI@43.167.208.94:443?insecure=1&sni=43.167.208.94#👉🆔@Goodbaye_filtering📡🇯🇵®️Japan©️Tokyo🅿️ping:112.6ms⚡️Hysteria2
+hy2://3b8c82ed-fe66-472d-915e-034ccb57103f@labs.frkn.org:443?insecure=1&sni=labs.frkn.org#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:289.3ms⚡️Hysteria2
+hy2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@144.31.49.47:443?insecure=1&sni=admin.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🇷🇺®️Russia©️Moscow🅿️ping:184.3ms⚡️Hysteria2
+hy2://mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj@de.1.23.h2corp.org:443?insecure=1&sni=germany3.h2corp.local#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:437.7ms⚡️Hysteria2
+hy2://dongtaiwang.com@62.210.124.146:22000?insecure=1&sni=www.microsoft.com#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Paris🅿️ping:152.4ms⚡️Hysteria2
+hy2://865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01@streambox.wwwinternetvideo.click:443?insecure=1&sni=streambox.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:228.9ms⚡️Hysteria2
+hy2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@admin.wwwinternetvideo.click:443?insecure=1&sni=admin.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:244.1ms⚡️Hysteria2
+hysteria2://VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC@82.38.60.15:8443?insecure=1&sni=hopp-us.yyuyy.com#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:63.9ms⚡️Hysteria2
+hysteria2://umnDU7jgFYUjpVjVM2sW9HL0rRYLJNgzVwRu2HzWEhyZKkRx@5.83.129.11:443?insecure=1&sni=germany1.h2corp.local#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:151.6ms⚡️Hysteria2
+hysteria2://mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj@91.196.32.163:443?insecure=1&sni=germany3.h2corp.local#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:165.2ms⚡️Hysteria2
+hysteria2://V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8@144.31.221.57:443?insecure=1&sni=player.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:152.9ms⚡️Hysteria2
+hysteria2://h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT@222.167.212.82:8443?insecure=1&sni=hopp-legend-se.roxa.org#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:177.0ms⚡️Hysteria2
+hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@admin.wwwinternetvideo.click:443?insecure=1#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:177.9ms⚡️Hysteria2
+hysteria2://h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT@222.167.212.81:8443?sni=hopp-legend-se.roxa.org#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:173.1ms⚡️Hysteria2
+hysteria2://BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=@fin14qr.wwwinternetvideo.click:443?insecure=1&sni=fin14qr.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:200.0ms⚡️Hysteria2
+hysteria2://cd74c0a406664a5bc0bac098220a2468@2.27.249.79:443?sni=nl1.sferavpn.pro&obfs=salamander&obfs-password=44f1c1e2f8b99e792ceed574627a1eb0#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:156.6ms⚡️Hysteria2
+hysteria2://sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX@faq.wwwinternetvideo.click:443?insecure=1&sni=cabinet.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:244.4ms⚡️Hysteria2
+hysteria2://V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8@player.wwwinternetvideo.click:443?insecure=1&sni=player.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:177.5ms⚡️Hysteria2
+hysteria2://umnDU7jgFYUjpVjVM2sW9HL0rRYLJNgzVwRu2HzWEhyZKkRx@de.1.22.washing.help:443?insecure=1&sni=germany1.h2corp.local#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:184.4ms⚡️Hysteria2
+hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@go2.wwwinternetvideo.click:443?insecure=1&sni=admin.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:215.8ms⚡️Hysteria2
+hysteria2://cd74c0a406664a5bc0bac098220a2468@2.27.59.206:443?sni=de1.sferavpn.pro&obfs=salamander&obfs-password=44f1c1e2f8b99e792ceed574627a1eb0#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:153.4ms⚡️Hysteria2
+hysteria2://cd74c0a406664a5bc0bac098220a2468@144.31.49.138:443?security=tls&obfs=salamander&obfs-password=44f1c1e2f8b99e792ceed574627a1eb0&insecure=0&sni=ru1.sferavpn.pro#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:187.2ms⚡️Hysteria2
+hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@130.49.161.70:443?security=tls&obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3&insecure=0&sni=hy2.aspidnet.xyz#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:152.4ms⚡️Hysteria2
+hysteria2://QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s@162.249.125.133:443?sni=hy2-new.aspidnet.xyz&obfs=salamander&obfs-password=c1b4086fea89914496c7e10967a419216566#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:176.9ms⚡️Hysteria2
+hysteria2://QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s@hy2-new.aspidnet.xyz:443/?insecure=1&obfs=salamander&obfs-password=c1b4086fea89914496c7e10967a419216566&sni=hy2-new.aspidnet.xyz#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:180.9ms⚡️Hysteria2
+hysteria2://6aab8efdf13945829ae3699c342be406@31.76.80.69:443?security=tls&obfs=salamander&obfs-password=uw9b2qq5rx&insecure=0&sni=fiproxy1.lockdwn.com#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:160.9ms⚡️Hysteria2
+hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@hy2.aspidnet.xyz:443/?insecure=1&obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:200.3ms⚡️Hysteria2
+hysteria2://github.com/Alvin9999-newpac/fanqiang@62.210.7.139:60111?insecure=1&sni=bing.com#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:23.0ms⚡️Hysteria2
+hysteria2://suAmQS9LlInNq4Wumh-FUF4GGlpgmG_g@159.223.157.129:8443?insecure=1&sni=159.223.157.129#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️North Bergen🅿️ping:70.7ms⚡️Hysteria2
+hysteria2://HowdyHysteria2023w0W@51.15.19.206:8443?insecure=1&obfs=salamander&obfs-password=HysteriaHowdy&sni=sni-here.com#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Haarlem🅿️ping:145.6ms⚡️Hysteria2
+hysteria2://cd74c0a406664a5bc0bac098220a2468@2.27.59.206:443?insecure=1&obfs=salamander&obfs-password=44f1c1e2f8b99e792ceed574627a1eb0&sni=de1.sferavpn.pro#👉🆔@Goodbaye_filtering📡🇩🇪®️Germany©️Falkenstein🅿️ping:152.7ms⚡️Hysteria2
+hysteria2://gf1:gfhysteria2024@185.156.44.99:443?insecure=1&sni=whatsapp.com#👉🆔@Goodbaye_filtering📡🇷🇴®️Romania©️Bucharest🅿️ping:181.4ms⚡️Hysteria2
+hysteria2://gf1:gfhysteria2024@5.129.235.85:443?insecure=1&sni=www.linux.com#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:151.2ms⚡️Hysteria2
+hysteria2://gf1:gfhysteria2024@173.212.201.85:443?insecure=1&sni=www.docker.com#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:208.5ms⚡️Hysteria2
+hysteria2://cd74c0a406664a5bc0bac098220a2468@nl1.sferavpn.pro:443?insecure=1&obfs=salamander&obfs-password=44f1c1e2f8b99e792ceed574627a1eb0&sni=nl1.sferavpn.pro#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:169.4ms⚡️Hysteria2
+hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@hy2.aspidnet.xyz:443?obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3&sni=hy2.aspidnet.xyz#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:198.4ms⚡️Hysteria2
+hysteria2://gf1:gfhysteria2024@66.94.121.46:443?insecure=1&sni=www.broadcom.com#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Seattle🅿️ping:74.6ms⚡️Hysteria2
+hysteria2://cd74c0a406664a5bc0bac098220a2468@2.27.249.79:443?obfs=salamander&obfs-password=44f1c1e2f8b99e792ceed574627a1eb0&sni=nl1.sferavpn.pro#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:159.7ms⚡️Hysteria2
+hysteria2://865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01@streambox.wwwinternetvideo.click:443?insecure=1&sni=127.0.0.1#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:191.8ms⚡️Hysteria2
+hysteria2://cd74c0a406664a5bc0bac098220a2468@ee1.sferavpn.pro:443?obfs=salamander&obfs-password=44f1c1e2f8b99e792ceed574627a1eb0&sni=ee1.sferavpn.pro#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:209.0ms⚡️Hysteria2
+hysteria2://sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX@31.76.71.63:443?insecure=1&sni=cabinet.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🇷🇺®️Russia©️Moscow🅿️ping:330.0ms⚡️Hysteria2
+hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@admin.wwwinternetvideo.click:443?sni=admin.wwwinternetvideo.click#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:201.8ms⚡️Hysteria2
+hysteria2://QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s@hy2-new.aspidnet.xyz:443/?insecure=1&amp;obfs=salamander&amp;obfs-password=c1b4086fea89914496c7e10967a419216566&amp;sni=hy2-new.aspidnet.xyz#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:180.8ms⚡️Hysteria2
+hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@hy2.aspidnet.xyz:443/?insecure=1&amp;obfs=salamander&amp;obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:200.8ms⚡️Hysteria2
+hysteria2://0a11d3b4-682c-4bfb-afb0-820b8285cb4b@mix.pantera-radio.ru:443?sni=mix.pantera-radio.ru&fp=firefox#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:212.4ms⚡️Hysteria2
+hysteria2://0a11d3b4-682c-4bfb-afb0-820b8285cb4b@covers.pantera-radio.ru:443?fp=firefox&amp;insecure=1&amp;sni=covers.pantera-radio.ru#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:279.5ms⚡️Hysteria2
+hysteria2://QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s@162.249.125.133:443/?obfs=salamander&obfs-password=c1b4086fea89914496c7e10967a419216566&sni=hy2-new.aspidnet.xyz#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:179.1ms⚡️Hysteria2
