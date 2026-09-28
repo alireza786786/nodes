@@ -1,4 +1,5 @@
-vless://9aab8f39-ccb3-44ea-acdc-a8aefe211287@45.164.20.114:10226?security=none&type=tcp&packetEncoding=xudp&encryption=none#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Mérida🅿️ping:77.1ms⚡️VLESS-TLS
-vless://9aab8f39-ccb3-44ea-acdc-a8aefe211287@45.164.20.85:10226?security=none&type=tcp&packetEncoding=xudp&encryption=none#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Mérida🅿️ping:77.1ms⚡️VLESS-TLS
-vless://9aab8f39-ccb3-44ea-acdc-a8aefe211287@45.164.20.114:10226?security=none&type=tcp#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Mérida🅿️ping:152.7ms⚡️VLESS-TLS
-vless://c18b978e-1c4e-415c-8bea-07942b563a64@216.238.79.164:443?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Querétaro City🅿️ping:49.8ms⚡️VLESS-TLS
+vless://9aab8f39-ccb3-44ea-acdc-a8aefe211287@45.164.20.114:10226?security=none&type=raw&packetEncoding=xudp#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Mérida🅿️ping:77.1ms⚡️VLESS-TLS
+vless://9aab8f39-ccb3-44ea-acdc-a8aefe211287@45.164.20.85:10226?security=none&type=tcp&packetEncoding=xudp&encryption=none#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Mérida🅿️ping:84.3ms⚡️VLESS-TLS
+ss://YWVzLTI1Ni1nY206Qld5UFBUdXNGS2hHZ3pLaA==@64.177.90.30:8388#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Querétaro City🅿️ping:49.5ms⚡️CF-CleanIP
+vless://9aab8f39-ccb3-44ea-acdc-a8aefe211287@45.164.20.114:10226?security=none&encryption=none&headerType=none&type=tcp#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Mérida🅿️ping:158.2ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@216.238.79.164:443?security=tls&type=ws&path=/&host=shuma.ccwu.cc&packetEncoding=xudp&sni=shuma.ccwu.cc&fp=chrome#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Querétaro City🅿️ping:67.4ms⚡️VLESS-TLS
