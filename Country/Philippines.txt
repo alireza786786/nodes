@@ -1,1 +1,2 @@
-vless://Channel:telegram:TurboConfigs@61.245.11.28:9090?encryption=none&headerType=http&host=play-apps-features.googleusercontent.com&path=/&security=none&type=tcp#👉🆔@Goodbaye_filtering📡🇵🇭®️Philippines©️Manila🅿️ping:159.9ms⚡️VLESS-TLS
+vless://7b50da93-0841-4044-af6a-99bb9dcda6fc@45.130.254.193:443?mode=auto&path=%2Fxh&security=tls&encryption=none&insecure=0&host=nd-25-5.anti-zaim.ru&fp=firefox&type=xhttp&allowInsecure=0&sni=nd-25-5.anti-zaim.ru#👉🆔@Goodbaye_filtering📡🇵🇭®️Philippines©️Butuan🅿️ping:95.8ms⚡️XHTTP-Elite
+vless://7b50da93-0841-4044-af6a-99bb9dcda6fc@45.130.254.193:443?type=xhttp&security=tls&sni=nd-25-5.anti-zaim.ru&path=%2Fxh&host=nd-25-5.anti-zaim.ru&fp=firefox#👉🆔@Goodbaye_filtering📡🇵🇭®️Philippines©️Butuan🅿️ping:99.1ms⚡️XHTTP-Elite
