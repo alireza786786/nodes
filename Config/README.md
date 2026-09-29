@@ -3,13 +3,13 @@
 
 | پروتکل (Protocol) | تعداد نودها (Nodes) | لینک مستقیم سابسکریپشن | اسکن بارکد (QR Code) |
 | :--- | :---: | :---: | :---: |
-| **TROJAN** | **445** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/trojan.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/trojan.txt" width="60"/> |
-| **VLESS** | **10380** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/vless.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/vless.txt" width="60"/> |
-| **VMESS** | **1042** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/vmess.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/vmess.txt" width="60"/> |
-| **SS** | **481** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/ss.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/ss.txt" width="60"/> |
-| **HYSTERIA2** | **84** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/hysteria2.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/hysteria2.txt" width="60"/> |
-| **SOCKS** | **10** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/socks.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/socks.txt" width="60"/> |
+| **VLESS** | **11098** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/vless.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/vless.txt" width="60"/> |
+| **TROJAN** | **506** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/trojan.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/trojan.txt" width="60"/> |
+| **VMESS** | **1063** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/vmess.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/vmess.txt" width="60"/> |
+| **HYSTERIA2** | **75** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/hysteria2.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/hysteria2.txt" width="60"/> |
+| **SS** | **458** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/ss.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/ss.txt" width="60"/> |
+| **SOCKS** | **12** | [📄 دریافت سابسکریپشن](https://raw.githubusercontent.com/alireza786786/nodes/main/Config/socks.txt) | <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://raw.githubusercontent.com/alireza786786/nodes/main/Config/socks.txt" width="60"/> |
 
 ---
-> 🕒 آخرین بروزرسانی: 2026-09-29 ساعت 04:11:34 به وقت تهران  
+> 🕒 آخرین بروزرسانی: 2026-09-29 ساعت 12:41:02 به وقت تهران  
 > 📢 کانال رسمی: [@Goodbaye_filtering](https://t.me/Goodbaye_filtering) | 💬 گروه: [@CONFIG_V2RAY_VIP](https://t.me/CONFIG_V2RAY_VIP)
