@@ -1,1 +1,1 @@
-vless://c18b978e-1c4e-415c-8bea-07942b563a64@107.189.2.206:8443?allowInsecure=1&sni=shuma.ccwu.cc&type=ws&host=shuma.ccwu.cc&path=/fp=chrome&security=tls#👉🆔@Goodbaye_filtering📡🇱🇺®️Luxembourg©️Roost🅿️ping:153.2ms⚡️VLESS-TLS
+ss://22ebc3ad-2e41-4fb3-acdd-c6269ac9bf81@95.85.95.85:443?encryption=none&security=tls&sni=promo.worldofwarships.com&alpn=h2%2Chttp%2F1.1&fp=chrome&type=ws&host=mamadgamenetcsgoskin2.ir&path=%2F#👉🆔@Goodbaye_filtering📡🇱🇺®️Luxembourg©️Luxembourg🅿️ping:2.2ms⚡️CF-CleanIP

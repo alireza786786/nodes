@@ -1,10 +1,10 @@
-socks://Og%3D%3D@213.111.146.36:18080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Haarlem🅿️ping:132.1ms⚡️CF-CleanIP
-socks://T2clM0QlM0Q6T2clM0QlM0Q%3D@121.169.46.116:1090#👉🆔@Goodbaye_filtering📡🇰🇷®️South Korea©️Suwon🅿️ping:133.8ms⚡️CF-CleanIP
-socks://Og%3D%3D@185.195.71.218:18080#👉🆔@Goodbaye_filtering📡🇨🇭®️Switzerland©️Hünenberg🅿️ping:147.0ms⚡️CF-CleanIP
-socks://Og%3D%3D@171.25.158.95:1080#👉🆔@Goodbaye_filtering📡🇸🇪®️Sweden©️Vaxjo🅿️ping:312.7ms⚡️CF-CleanIP
-socks://Og%3D%3D@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:231.1ms⚡️CF-CleanIP
-socks://Og==@213.111.146.36:18080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Haarlem🅿️ping:135.1ms⚡️CF-CleanIP
-socks://VDJjbE0wUWxNMFE2Og==@121.169.46.116:1090#👉🆔@Goodbaye_filtering📡🇰🇷®️South Korea©️Suwon🅿️ping:132.2ms⚡️CF-CleanIP
-socks://Og==@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:231.7ms⚡️CF-CleanIP
-socks://Og==@185.195.71.218:18080#👉🆔@Goodbaye_filtering📡🇨🇭®️Switzerland©️Hünenberg🅿️ping:150.7ms⚡️CF-CleanIP
-socks://Og==@109.123.251.109:1080#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:254.1ms⚡️CF-CleanIP
+socks://dGVzdDEyMzp0ZXN0MTIz@185.145.99.41:1080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:90.7ms⚡️CF-CleanIP
+socks://Og%3D%3D@213.111.146.36:18080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Haarlem🅿️ping:87.9ms⚡️CF-CleanIP
+socks://Og%3D%3D@185.195.71.218:18080#👉🆔@Goodbaye_filtering📡🇨🇭®️Switzerland©️Hünenberg🅿️ping:109.3ms⚡️CF-CleanIP
+socks://Og%3D%3D@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:197.6ms⚡️CF-CleanIP
+socks://Og%3D%3D@171.25.158.95:1080#👉🆔@Goodbaye_filtering📡🇸🇪®️Sweden©️Vaxjo🅿️ping:151.9ms⚡️CF-CleanIP
+socks://Og==@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:198.1ms⚡️CF-CleanIP
+socks://Og==@185.195.71.218:18080#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:97.1ms⚡️CF-CleanIP
+socks://Og==@213.111.146.36:18080#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:84.7ms⚡️CF-CleanIP
+socks://VDJjbE0wUWxNMFE2Og==@121.169.46.116:1090#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:179.3ms⚡️CF-CleanIP
+socks://Og==@109.123.251.109:1080#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:160.4ms⚡️CF-CleanIP
