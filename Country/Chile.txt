@@ -1,2 +1,2 @@
-vless://ad5325f8-f0b3-41c4-a561-113529b60e70@34.176.187.219:443?security=reality&type=tcp&packetEncoding=xudp&sni=www.cloudflare.com&fp=chrome&sid=2c2d919f5183d0b7&pbk=HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:136.8ms⚡️Reality
-vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@64.176.23.207:80?type=ws&host=platform118.halalkhor.info&path=%2Fplatform118#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:136.7ms⚡️VLESS-TLS
+vless://ad5325f8-f0b3-41c4-a561-113529b60e70@34.176.187.219:443?security=reality&type=tcp&packetEncoding=xudp&sni=www.cloudflare.com&fp=chrome&sid=2c2d919f5183d0b7&pbk=HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:130.2ms⚡️Reality
+vless://3b940e86-7b0d-40da-acf1-12d334e41023@151.101.220.11:80/?type=ws&encryption=none&flow=&host=Fastapi.Org&path=%2F&ed=2560&eh=Sec-WebSocket-Protocol#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:134.7ms⚡️VLESS-TLS
