@@ -1,2 +1,1 @@
-vless://Channel:telegram:TurboConfigs@61.245.11.28:9090?encryption=none&headerType=http&host=play-apps-features.googleusercontent.com&path=/&security=none&type=tcp#👉🆔@Goodbaye_filtering📡🇵🇭®️Philippines©️Manila🅿️ping:181.3ms⚡️VLESS-TLS
-ss://YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0@149.104.109.252:8882#👉🆔@Goodbaye_filtering📡🇵🇭®️Philippines©️Manila🅿️ping:210.2ms⚡️CF-CleanIP
+vless://Channel:telegram:TurboConfigs@61.245.11.28:9090?encryption=none&headerType=http&host=play-apps-features.googleusercontent.com&path=/&security=none&type=tcp#👉🆔@Goodbaye_filtering📡🇵🇭®️Philippines©️Manila🅿️ping:206.5ms⚡️VLESS-TLS
