@@ -1,1 +1,1 @@
-trojan://humanity@43.169.18.179:443?host=www.creationlong.org&path=%2Fassignment&sni=www.creationlong.org&type=ws#👉🆔@Goodbaye_filtering📡🇨🇳®️China©️Haidian🅿️ping:86.1ms⚡️Trojan-TLS
+vless://d6b8011a-c725-435a-9fec-bf6d3530392c@117.187.185.76:443/?type=ws&encryption=none&host=vlee.amclubs.nyc.mn&path=%2F%3Fed%3D2560&security=tls&sni=vlee.amclubs.nyc.mn&fp=randomized#👉🆔@Goodbaye_filtering📡🇨🇳®️China©️Jinrongjie🅿️ping:268.2ms⚡️VLESS-TLS

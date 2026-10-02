@@ -1,1 +1,2 @@
-vless://04c808e2-0b59-47b0-a54b-32fc7ef1c902@94.154.128.132:443?&security=tls&fp=chrome&sni=free.cndyw.ggff.net&type=ws&headerType=none&host=free.cndyw.ggff.net&path=pyip=bpb.yousef.isegaro.com#👉🆔@Goodbaye_filtering📡🇺🇿®️Uzbekistan©️Tashkent🅿️ping:214.2ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@46.8.194.76:8443?fp=chrome&host=shuma.ccwu.cc&path=%2F&security=tls&sni=shuma.ccwu.cc&type=ws#👉🆔@Goodbaye_filtering📡🇺🇿®️Uzbekistan©️Tashkent🅿️ping:171.1ms⚡️VLESS-TLS
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@46.8.194.76:2053?fp=chrome&host=shuma.ccwu.cc&path=%2F&security=tls&sni=shuma.ccwu.cc&type=ws#👉🆔@Goodbaye_filtering📡🇺🇿®️Uzbekistan©️Tashkent🅿️ping:173.8ms⚡️VLESS-TLS
