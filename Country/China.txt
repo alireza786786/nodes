@@ -1,2 +1,1 @@
-vless://d6b8011a-c725-435a-9fec-bf6d3530392c@117.187.185.76:443/?type=ws&encryption=none&host=vlee.amclubs.nyc.mn&path=%2F%3Fed%3D2560&security=tls&sni=vlee.amclubs.nyc.mn&fp=randomized#👉🆔@Goodbaye_filtering📡🇨🇳®️China©️Jinrongjie🅿️ping:233.9ms⚡️VLESS-TLS
-vless://72d334af-a4e9-ed8f-cbec-75317ce0b463@122.8.44.9:443?path=%2F&amp;security=reality&amp;encryption=none&amp;pbk=D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs&amp;fp=chrome&amp;type=xhttp&amp;sni=download.nvidia.com#👉🆔@Goodbaye_filtering📡🇨🇳®️China©️Haidian🅿️ping:164.1ms⚡️VLESS-TLS
+trojan://humanity@43.169.18.179:443?host=www.creationlong.org&path=%2Fassignment&sni=www.creationlong.org&type=ws#👉🆔@Goodbaye_filtering📡🇨🇳®️China©️Haidian🅿️ping:86.1ms⚡️Trojan-TLS

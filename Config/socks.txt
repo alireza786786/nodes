@@ -1,10 +1,10 @@
-socks://Og%3D%3D@5.45.119.70:1080#👉🆔@Goodbaye_filtering📡🇪🇪®️Estonia©️Jõhvi🅿️ping:152.3ms⚡️CF-CleanIP
-socks://T2clM0QlM0Q6T2clM0QlM0Q%3D@121.169.46.116:1090#👉🆔@Goodbaye_filtering📡🇰🇷®️South Korea©️Suwon🅿️ping:134.4ms⚡️CF-CleanIP
-socks://Og%3D%3D@213.111.146.36:18080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Haarlem🅿️ping:130.8ms⚡️CF-CleanIP
-socks://Og%3D%3D@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:232.3ms⚡️CF-CleanIP
-socks://Og%3D%3D@212.77.75.25:1088#👉🆔@Goodbaye_filtering📡🇮🇹®️Italy©️Empoli🅿️ping:150.4ms⚡️CF-CleanIP
-socks://MTIzNDU2OjEyMzQ1Ng%3D%3D@8.209.236.192:1080#👉🆔@Goodbaye_filtering📡🇯🇵®️Japan©️Tokyo🅿️ping:115.2ms⚡️CF-CleanIP
-socks://Og%3D%3D@109.205.182.143:1088#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:193.9ms⚡️CF-CleanIP
-socks://Og==@213.111.146.36:18080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Haarlem🅿️ping:131.7ms⚡️CF-CleanIP
-socks://Og==@185.195.71.218:18080#👉🆔@Goodbaye_filtering📡🇨🇭®️Switzerland©️Hünenberg🅿️ping:148.4ms⚡️CF-CleanIP
-socks://Og==@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:232.0ms⚡️CF-CleanIP
+socks://dGVzdDEyMzp0ZXN0MTIz@104.168.249.36:1080#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Seattle🅿️ping:35.6ms⚡️CF-CleanIP
+socks://dGVzdDEyMzp0ZXN0MTIz@185.145.99.41:1080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:138.1ms⚡️CF-CleanIP
+socks://Og%3D%3D@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:231.1ms⚡️CF-CleanIP
+socks://Og%3D%3D@213.111.146.36:18080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Haarlem🅿️ping:134.1ms⚡️CF-CleanIP
+socks://Og%3D%3D@109.205.182.143:1088#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:223.9ms⚡️CF-CleanIP
+socks://VDJjbE0wUWxNMFE2Og==@121.169.46.116:1090#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:133.9ms⚡️CF-CleanIP
+socks://Og==@185.195.71.218:18080#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:165.9ms⚡️CF-CleanIP
+socks://Og==@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:232.0ms⚡️CF-CleanIP
+socks://Og==@213.111.146.36:18080#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:133.6ms⚡️CF-CleanIP
+socks5://5.45.119.70:1080#👉🆔@Goodbaye_filtering📡🇪🇪®️Estonia©️Jõhvi🅿️ping:154.6ms⚡️CF-CleanIP

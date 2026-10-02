@@ -1,2 +1,1 @@
-vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@64.176.23.207:80?type=ws&host=platform118.halalkhor.info&path=%2Fplatform118#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:153.0ms⚡️VLESS-TLS
-vless://ad5325f8-f0b3-41c4-a561-113529b60e70@34.176.137.90:443?pbk=HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc&security=reality&sid=2c2d919f5183d0b7&sni=www.cloudflare.com&fp=android#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:134.2ms⚡️Reality
+ss://YWVzLTI1Ni1nY206eEJTdEJFVnF2R3dIUG9jYw==@64.176.2.21:8388#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:152.9ms⚡️CF-CleanIP
