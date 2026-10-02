@@ -1,0 +1,1 @@
+vless://0603385b-2d6f-4bfb-8f26-d26dbc85878d@197.188.22.102:443?security=tls&sni=revil.servehttp.com&alpn=http/1.1&fp=chrome&type=ws&path=/?ed%3D2048&host=revil.servehttp.com&encryption=none#👉🆔@Goodbaye_filtering📡🇳🇦®️Namibia©️Windhoek🅿️ping:221.3ms⚡️VLESS-TLS

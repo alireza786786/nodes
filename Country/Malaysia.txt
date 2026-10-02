@@ -1,1 +1,5 @@
-ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@130.94.69.15:7001#👉🆔@Goodbaye_filtering📡🇲🇾®️Malaysia©️Kuala Lumpur🅿️ping:185.1ms⚡️CF-CleanIP
+ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@130.94.69.15:7001#👉🆔@Goodbaye_filtering📡🇲🇾®️Malaysia©️Kuala Lumpur🅿️ping:230.1ms⚡️CF-CleanIP
+vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@45.195.69.230:80?host=platform103.halalkhor.info&path=%2Fplatform103&security=none&sni=platform103.halalkhor.info&type=ws#👉🆔@Goodbaye_filtering📡🇲🇾®️Malaysia©️Kuala Lumpur🅿️ping:234.0ms⚡️VLESS-TLS
+vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@136.0.254.60:80?host=platform118.halalkhor.info&path=%2Fplatform118&security=none&type=ws#👉🆔@Goodbaye_filtering📡🇲🇾®️Malaysia©️Kuala Lumpur🅿️ping:234.0ms⚡️VLESS-TLS
+vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@45.194.27.124:80?host=platform101.halalkhor.info&path=%2Fplatform101&security=none&type=ws#👉🆔@Goodbaye_filtering📡🇲🇾®️Malaysia©️Kuala Lumpur🅿️ping:233.2ms⚡️VLESS-TLS
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2UVBHSmF4WEN5cVkyNHN1SHRnTmd4RHFCajJSSFZHSVpEQ3l6bQ@101.99.74.138:31348#👉🆔@Goodbaye_filtering📡🇲🇾®️Malaysia©️Kuala Lumpur🅿️ping:230.3ms⚡️CF-CleanIP
