@@ -1,2 +1,2 @@
-vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@64.176.21.237:80?type=ws&host=platform108.halalkhor.info&path=%2Fplatform108#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:130.9ms⚡️VLESS-TLS
-vless://04c808e2-0b59-47b0-a54b-32fc7ef1c902@64.176.15.110:2053?&security=tls&fp=chrome&sni=free.cndyw.ggff.net&type=ws&headerType=none&host=free.cndyw.ggff.net&path=pyip=bpb.yousef.isegaro.com#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:137.6ms⚡️VLESS-TLS
+vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@64.176.18.215:80?sni=platform113.halalkhor.info&type=ws&host=platform113.halalkhor.info&path=%2Fplatform113#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:132.5ms⚡️VLESS-TLS
+vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@64.176.21.237:80?type=ws&host=platform108.halalkhor.info&path=%2Fplatform108#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:132.6ms⚡️VLESS-TLS
