@@ -1,3 +1,2 @@
-ss://YWVzLTI1Ni1nY206eEJTdEJFVnF2R3dIUG9jYw==@64.176.2.21:8388#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:137.4ms⚡️CF-CleanIP
-vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@64.176.21.237:80?type=ws&host=platform108.halalkhor.info&path=%2Fplatform108#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:137.6ms⚡️VLESS-TLS
-vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@64.176.23.207:80?type=ws&host=platform118.halalkhor.info&path=%2Fplatform118#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:138.4ms⚡️VLESS-TLS
+vless://04c808e2-0b59-47b0-a54b-32fc7ef1c902@64.176.15.110:2053?security=tls&type=ws&path=%2Fpyip%3Dbpb.yousef.isegaro.com&host=free.cndyw.ggff.net&packetEncoding=xudp&sni=free.cndyw.ggff.net&fp=random#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:128.3ms⚡️VLESS-TLS
+vless://04c808e2-0b59-47b0-a54b-32fc7ef1c902@64.176.15.110:2053?sni=free.cndyw.ggff.net&type=ws&host=free.cndyw.ggff.net&path=pyip=bpb.yousef.isegaro.comfp=random&security=tls#👉🆔@Goodbaye_filtering📡🇨🇱®️Chile©️Santiago🅿️ping:128.1ms⚡️VLESS-TLS
