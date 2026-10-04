@@ -1,1 +1,1 @@
-vless://d342d11e-d424-4583-b36e-524ab1f0afa4@160.30.54.63:443?security=tls&type=ws&path=%2Fchannel%3Fed%3D2560&host=cdn8848.776676.xyz&packetEncoding=none&allowInsecure=0&ech=cloudflare-ech.com%2Bhttps%3A%2F%2Fdns.alidns.com%2Fdns-query&sni=cdn8848.776676.xyz&fp=chrome#👉🆔@Goodbaye_filtering📡🇻🇳®️Vietnam©️Cầu Diễn🅿️ping:198.0ms⚡️VLESS-TLS
+vless://b83faafc-cbb7-4655-99d4-2c4c39a49d1b@150.95.109.109:2086?security=none&type=tcp#👉🆔@Goodbaye_filtering📡🇻🇳®️Vietnam©️Hanoi🅿️ping:254.3ms⚡️VLESS-TLS
