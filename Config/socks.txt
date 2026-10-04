@@ -1,8 +1,8 @@
-socks://MTIzNDU2OjEyMzQ1Ng%3D%3D@8.209.236.192:1080#👉🆔@Goodbaye_filtering📡🇯🇵®️Japan©️Tokyo🅿️ping:111.6ms⚡️CF-CleanIP
-socks://dGVzdDEyMzp0ZXN0MTIz@185.145.99.41:1080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:138.1ms⚡️CF-CleanIP
-socks://Og%3D%3D@123.58.219.171:10808#👉🆔@Goodbaye_filtering📡🇭🇰®️Hong Kong©️Hong Kong🅿️ping:160.4ms⚡️CF-CleanIP
-socks://T2clM0QlM0Q6@121.169.46.116:1090#👉🆔@Goodbaye_filtering📡🇰🇷®️South Korea©️Suwon🅿️ping:133.0ms⚡️CF-CleanIP
-socks://Og%3D%3D@212.77.75.25:1088#👉🆔@Goodbaye_filtering📡🇮🇹®️Italy©️Empoli🅿️ping:152.2ms⚡️CF-CleanIP
-socks://VDJjbE0wUWxNMFE2Og==@121.169.46.116:1090#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:131.8ms⚡️CF-CleanIP
-socks://Og==@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:237.3ms⚡️CF-CleanIP
-socks5://144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:238.7ms⚡️CF-CleanIP
+socks://dGVzdDEyMzp0ZXN0MTIz@185.145.99.41:1080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:140.8ms⚡️CF-CleanIP
+socks://YWRtaW46YWRtaW4%3D@47.242.19.215:8899#👉🆔@Goodbaye_filtering📡🇭🇰®️Hong Kong©️Hong Kong🅿️ping:139.7ms⚡️CF-CleanIP
+socks://MTExOjExMQ%3D%3D@106.107.236.110:1080#👉🆔@Goodbaye_filtering📡🇹🇼®️Taiwan©️Taichung🅿️ping:132.1ms⚡️CF-CleanIP
+socks://VkRKamJFMHdVV3hOTUZFMk9nOlZESmpiRTB3VVd4Tk1GRTJPZw%3D%3D@121.169.46.116:1090#👉🆔@Goodbaye_filtering📡🇰🇷®️South Korea©️Suwon🅿️ping:121.9ms⚡️CF-CleanIP
+socks://Og%3D%3D@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:214.8ms⚡️CF-CleanIP
+socks://VDJjbE0wUWxNMFE2Og==@121.169.46.116:1090#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:122.8ms⚡️CF-CleanIP
+socks://Og==@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:215.0ms⚡️CF-CleanIP
+socks://UjM4WWNqMWJuR1F0RldQN2NMVU1neUdDOlRlbDZAU29vblRlYW0@hu-bud.pvdata.host:1080#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:181.1ms⚡️SOCKS
