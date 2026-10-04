@@ -1,2 +1,2 @@
-vless://79bc7b01-6e4e-4365-a120-fefac8182bd9@34.51.23.2:443?security=reality&type=tcp&packetEncoding=xudp&sni=www.cloudflare.com&fp=chrome&sid=65f01b4b99e52015&pbk=vFcM44RcbcO5jcrSWHLd_0exXAnnJLhpCNnMrWCwlzI#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Queretaro🅿️ping:58.7ms⚡️Reality
-ss://YWVzLTI1Ni1nY206Qld5UFBUdXNGS2hHZ3pLaA==@64.177.90.30:8388#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Querétaro City🅿️ping:50.8ms⚡️CF-CleanIP
+vless://8bba3194-4856-46d1-8319-075817d87eb1@193.39.208.215:443?security=reality&flow=xtls-rprx-vision&sni=nl11.cyphervpn.pro&type=tcp&fp=firefox&pbk=oGgupP3uX0TNyFwuxNYaFj-IQ8EPhCuKfJdaOHiMnV0&sid=c334408a1056aaf8#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Mexico City🅿️ping:115.4ms⚡️Reality-Vision
+vless://9ad81959-02c6-4679-a419-2af6a16ca07a@34.51.29.171:443?fp=chrome&pbk=8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA&security=reality&sid=dcabbf24adf88abc&sni=www.cloudflare.com#👉🆔@Goodbaye_filtering📡🇲🇽®️Mexico©️Queretaro🅿️ping:50.6ms⚡️Reality
