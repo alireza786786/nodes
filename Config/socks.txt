@@ -1,17 +1,4 @@
-socks://Og%3D%3D@129.153.11.56:1080#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Ashburn🅿️ping:26.1ms⚡️CF-CleanIP
-socks://dGVzdDEyMzp0ZXN0MTIz@104.168.249.36:1080#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Seattle🅿️ping:51.4ms⚡️CF-CleanIP
-socks://Og%3D%3D@109.205.182.143:1088#👉🆔@Goodbaye_filtering📡🇫🇷®️France©️Lauterbourg🅿️ping:127.6ms⚡️CF-CleanIP
-socks://dGVzdDEyMzp0ZXN0MTIz@185.145.99.41:1080#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:121.7ms⚡️CF-CleanIP
-socks://MTExOjExMQ%3D%3D@106.107.236.110:1080#👉🆔@Goodbaye_filtering📡🇹🇼®️Taiwan©️Taichung🅿️ping:168.8ms⚡️CF-CleanIP
-socks://Og%3D%3D@65.20.79.228:40001#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:203.5ms⚡️CF-CleanIP
-socks://Og%3D%3D@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🇮🇳®️India©️Mumbai🅿️ping:240.2ms⚡️CF-CleanIP
-socks://dXhzdm5hb2c6Z3dtYmVnY3B0MnY1@3.36.26.231:29631#👉🆔@Goodbaye_filtering📡🇰🇷®️South Korea©️Incheon🅿️ping:162.5ms⚡️CF-CleanIP
-socks://Og==@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:230.5ms⚡️CF-CleanIP
-socks://VDJjbE0wUWxNMFE2Og==@121.169.46.116:1090#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:163.5ms⚡️CF-CleanIP
-socks5://45.74.31.46:4465#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Eygelshoven🅿️ping:115.1ms⚡️CF-CleanIP
-socks5://212.3.206.215:10800#👉🆔@Goodbaye_filtering📡🇱🇻®️Latvia©️Riga🅿️ping:151.7ms⚡️CF-CleanIP
-socks5://102.129.229.131:1081#👉🆔@Goodbaye_filtering📡🇹🇭®️Thailand©️Bangkok🅿️ping:256.6ms⚡️CF-CleanIP
-socks5://45.74.31.23:10374#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Eygelshoven🅿️ping:122.7ms⚡️CF-CleanIP
-socks5://45.74.31.23:8138#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Eygelshoven🅿️ping:118.9ms⚡️CF-CleanIP
-socks5://45.74.31.23:4601#👉🆔@Goodbaye_filtering📡🇳🇱®️The Netherlands©️Eygelshoven🅿️ping:121.7ms⚡️CF-CleanIP
-socks://MTIzOjEyMw@8.217.182.75:3060#👉🆔@Goodbaye_filtering📡🇭🇰®️Hong Kong©️Hong Kong🅿️ping:177.5ms⚡️CF-CleanIP
+socks://MTExOjExMQ%3D%3D@106.107.236.110:1080#👉🆔@Goodbaye_filtering📡🇹🇼®️Taiwan©️Taichung🅿️ping:155.8ms⚡️CF-CleanIP
+socks://Og%3D%3D@129.153.11.56:1080#👉🆔@Goodbaye_filtering📡🇺🇸®️United States©️Ashburn🅿️ping:46.7ms⚡️CF-CleanIP
+socks://Og==@144.24.111.128:1088#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:227.5ms⚡️CF-CleanIP
+socks://VDJjbE0wUWxNMFE2Og==@121.169.46.116:1090#👉🆔@Goodbaye_filtering📡🌐®️Unknown©️Unknown🅿️ping:147.4ms⚡️CF-CleanIP
