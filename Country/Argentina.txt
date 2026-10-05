@@ -1,1 +1,2 @@
-vless://04c808e2-0b59-47b0-a54b-32fc7ef1c902@131.255.6.88:443?&security=tls&fp=chrome&sni=free.cndyw.ggff.net&type=ws&headerType=none&host=free.cndyw.ggff.net&path=pyip=bpb.yousef.isegaro.com#👉🆔@Goodbaye_filtering📡🇦🇷®️Argentina©️Buenos Aires🅿️ping:143.6ms⚡️VLESS-TLS
+vless://3b940e86-7b0d-40da-acf1-12d334e41023@151.101.216.11:80/?type=ws&encryption=none&flow=&host=Fastapi.Org&path=%2F&ed=2560&eh=Sec-WebSocket-Protocol#👉🆔@Goodbaye_filtering📡🇦🇷®️Argentina©️Buenos Aires🅿️ping:176.5ms⚡️VLESS-TLS
+vless://04c808e2-0b59-47b0-a54b-32fc7ef1c902@131.255.6.88:443?&security=tls&fp=chrome&sni=free.cndyw.ggff.net&type=ws&headerType=none&host=free.cndyw.ggff.net&path=pyip=bpb.yousef.isegaro.com#👉🆔@Goodbaye_filtering📡🇦🇷®️Argentina©️Buenos Aires🅿️ping:162.0ms⚡️VLESS-TLS
