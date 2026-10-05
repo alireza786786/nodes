@@ -1,2 +1,2 @@
-trojan://5931134d1cde66bf83a54acdfebe7ab2@47.250.84.25:443?sni=47.250.84.25&allowInsecure=1&type=tcp&fp=chrome#👉🆔@Goodbaye_filtering📡🇲🇾®️Malaysia©️Kuala Lumpur🅿️ping:204.1ms⚡️Trojan-TLS
-trojan://5931134d1cde66bf83a54acdfebe7ab2@47.250.84.25:443?allowInsecure=1&type=tcp#👉🆔@Goodbaye_filtering📡🇲🇾®️Malaysia©️Kuala Lumpur🅿️ping:213.2ms⚡️Trojan-TLS
+trojan://5931134d1cde66bf83a54acdfebe7ab2@47.250.84.25:443?sni=47.250.84.25&allowInsecure=1&type=tcp&fp=chrome#👉🆔@Goodbaye_filtering📡🇲🇾®️Malaysia©️Kuala Lumpur🅿️ping:224.8ms⚡️Trojan-TLS
+trojan://5931134d1cde66bf83a54acdfebe7ab2@47.250.84.25:443?allowInsecure=1&type=tcp#👉🆔@Goodbaye_filtering📡🇲🇾®️Malaysia©️Kuala Lumpur🅿️ping:228.9ms⚡️Trojan-TLS
